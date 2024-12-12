@@ -48,7 +48,7 @@ export const CHContactForm = () => {
     }
     setErrors({});
     try {
-      const response = await axios.post("/api/test", formData);
+      const response = await axios.post("/api/pushToGoogleSheets", formData);
       toast.info(response.data.message); 
       // Success toast
       // setFormData({ name: "", email: "", date: "", text: "" });

@@ -1,6 +1,9 @@
 {
     "functions": {
-        "api/test.js": {
+        "api/fetchData.js": {
+            "maxDuration":30   
+        },
+        "api/pushToGoogleSheets.js": {
             "maxDuration":30   
         }
 }
