@@ -16,7 +16,7 @@ export const TopNavigationBar = () => {
     <div className="isar">
       <a className="active" href="#_heroSection_syk8k_1">{t("aceuilleLabel")}</a>
       <a href="#_CHDiscoverSection_424bv_1">{t("Sûr-ceLabel")}</a>
-      <a href="#_footerDetailsCard_8dfwx_5">Contact</a>
+      <a href="#contactUsSection">Contact</a>
     </div>
     <div className="imin">
        {/* <a href="#contactUsSection">Inscription</a> */}
