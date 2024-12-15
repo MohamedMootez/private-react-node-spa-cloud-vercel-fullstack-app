@@ -1,6 +1,8 @@
 import { google } from "googleapis";
 import formidable from "formidable";
+import fs from "fs";
 
+// Google service account credentials
 const GOOGLE_SERVICE_ACCOUNT_KEY = {
   "type": "service_account",
   "project_id": "centered-flow-444521-m2",
@@ -12,13 +14,12 @@ const GOOGLE_SERVICE_ACCOUNT_KEY = {
 
 export const config = {
   api: {
-    bodyParser: false, // Disable default body parser for custom parsing
+    bodyParser: false, // Disable default body parser for handling file uploads
   },
 };
 
 // Helper to parse form and flatten fields
-const parseForm = (req) =>
-  new Promise((resolve, reject) => {
+const parseForm = (req) =>new Promise((resolve, reject) => {
     const form = formidable({ keepExtensions: true });
     form.parse(req, (err, fields, files) => {
       if (err) return reject(err);
@@ -27,30 +28,54 @@ const parseForm = (req) =>
       const flattenedFields = Object.fromEntries(
         Object.entries(fields).map(([key, value]) => [key, Array.isArray(value) ? value[0] : value])
       );
-
+// theres reject, when you want to reject, or you say resolve which returns something good
       resolve({ fields: flattenedFields, files });
     });
   });
 
+// Helper function to upload a file to Google Drive
+const uploadFileToDrive = async (auth, file) => {
+  const drive = google.drive({ version: "v3", auth });
+
+  const fileMetadata = {
+    name: file.originalFilename, // File name in Google Drive
+    parents: ["1WX41TqsqIeoQO7jC2vrgimiHUBjMr0qR"], // Replace with your Drive folder ID
+  };
+
+  const media = {
+    mimeType: file.mimetype,
+    body: fs.createReadStream(file.filepath), // Read the file from its temporary location
+  };
+
+  const response = await drive.files.create({
+    resource: fileMetadata,
+    media: media,
+    fields: "id, name, mimeType, webViewLink",
+  });
+
+  return response.data; // Returns file details
+};
+
 export default async function handler(req, res) {
+
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method Not Allowed" });
   }
 
   try {
+    // Parse form data
     const { fields, files } = await parseForm(req);
 
-    if (files.file && Array.isArray(files.file)) {
-      const uploadedFile = files.file[0]; // Access the first file
-    
-      console.log(`File path: ${uploadedFile.filepath}`);
-      console.log(`Original filename: ${uploadedFile.originalFilename}`);
-      console.log(`MIME type: ${uploadedFile.mimetype}`);
-      console.log(`File size: ${uploadedFile.size} bytes`);
-    } else {
-      console.log("No file was uploaded or incorrect structure.");
+    if (!files.file || !Array.isArray(files.file) || files.file.length === 0) {
+      return res.status(400).json({ error: "No file uploaded." });
     }
-    
+
+    const uploadedFile = files.file[0]; // Get the first uploaded file
+
+    console.log(`File path: ${uploadedFile.filepath}`);
+    console.log(`Original filename: ${uploadedFile.originalFilename}`);
+    console.log(`MIME type: ${uploadedFile.mimetype}`);
+    console.log(`File size: ${uploadedFile.size} bytes`);
 
     const { name, email, text } = fields;
 
@@ -58,20 +83,25 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: "Missing required fields: name, email, or text." });
     }
 
-    // Authenticate with Google API
-    const client = new google.auth.JWT({
+    // Authenticate with Google API for both Drive and Sheets
+    const auth = new google.auth.JWT({
       email: GOOGLE_SERVICE_ACCOUNT_KEY.client_email,
       key: GOOGLE_SERVICE_ACCOUNT_KEY.private_key,
-      scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+      scopes: [
+        "https://www.googleapis.com/auth/drive.file",
+        "https://www.googleapis.com/auth/spreadsheets",
+      ],
     });
 
-    await client.authorize();
+    const driveResponse = await uploadFileToDrive(auth, uploadedFile);
+    console.log("File uploaded to Google Drive:", driveResponse);
 
-    const sheets = google.sheets({ version: "v4", auth: client });
-    const spreadsheetId = "1joyayGEzMrRkNxEHc9PcqLnCMn2RrMzYjLEeFALFQhI";
-    const range = "Sheet1!A:C"; // Adjust for three fields: name, email, text
+    // Append data to Google Sheets
+    const sheets = google.sheets({ version: "v4", auth });
+    const spreadsheetId = "1joyayGEzMrRkNxEHc9PcqLnCMn2RrMzYjLEeFALFQhI"; // Replace with your Sheet ID
+    const range = "Sheet1!A:D"; // Adjust the range to match your fields
 
-    const values = [[name, email, text]];
+    const values = [[name, email, text, driveResponse.webViewLink]];
     console.log("Appending values to Google Sheets:", values);
 
     await sheets.spreadsheets.values.append({
@@ -83,10 +113,19 @@ export default async function handler(req, res) {
     });
 
     console.log("Row added successfully.");
-    res.status(200).json({ success: true, message: "Row added successfully!" });
+
+    // Upload the file to Google Drive
+
+
+
+    // Respond with success and file details
+    res.status(200).json({
+      success: true,
+      message: "File uploaded and data appended successfully!",
+      driveFileDetails: driveResponse,
+    });
   } catch (error) {
     console.error("Error:", error);
     res.status(500).json({ error: "Internal Server Error", details: error.message });
   }
 }
-

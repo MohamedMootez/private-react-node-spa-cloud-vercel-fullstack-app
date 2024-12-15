@@ -33,6 +33,7 @@ export const CHContactForm = () => {
       setSelectedFile(null); // Reset the file state if no file is selected
     }
   };
+  
 
   const validateInputs = () => {
     const newErrors = {};
@@ -48,9 +49,11 @@ export const CHContactForm = () => {
     return newErrors;
   };
 
+
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     // Validate form inputs
     const validationErrors = validateInputs();
     if (Object.keys(validationErrors).length > 0) {
@@ -58,7 +61,7 @@ export const CHContactForm = () => {
       return;
     }
     setErrors({}); // Clear errors if validation passes
-
+  
     try {
       // Prepare form data
       const formDataToSend = new FormData();
@@ -66,11 +69,11 @@ export const CHContactForm = () => {
       formDataToSend.append("email", formData.email);
       formDataToSend.append("date", formData.date);
       formDataToSend.append("text", formData.text);
-
+  
       if (selectedFile) {
         formDataToSend.append("file", selectedFile);
       }
-
+  
       // Log form data for debugging
       console.log("Submitting form data:", {
         name: formData.name,
@@ -79,23 +82,17 @@ export const CHContactForm = () => {
         text: formData.text,
         file: selectedFile ? selectedFile.name : "No file selected",
       });
-
+  
       // Send the POST request to your API
       const response = await axios.post("/api/pushToGoogleSheets", formDataToSend, {
         headers: { "Content-Type": "multipart/form-data" },
       });
-
+  
       // Handle the response
-      if (response.status === 200) {
-        toast.success(response.data.message); // Success toast
+      if (response.status === 200 || response.status === 300) {
+        toast.info(response.data.message); // Success toast
         console.log("Response from server:", response.data);
-        const formDataToSend = new FormData();
-        formDataToSend.append("name", formData.name); // Matches "name" expected by backend
-        formDataToSend.append("email", formData.email); // Matches "email" expected by backend
-        formDataToSend.append("message", formData.text); // Map "text" to "message" as expected
-        if (selectedFile) {
-          formDataToSend.append("file", selectedFile);
-        }
+  
         // Optionally, clear the form after successful submission
         setFormData({
           name: "",
@@ -110,12 +107,15 @@ export const CHContactForm = () => {
     } catch (error) {
       // Handle errors
       console.error("Error submitting form:", error);
-
+  
       // Provide user-friendly feedback
       if (error.response) {
         // Server responded with a status other than 2xx
         console.error("Server error:", error.response.data);
-        toast.error(error.response.data.error || t("Failed to submit the form. Please try again."));
+        toast.error(
+          error.response.data.error ||
+            t("Failed to submit the form. Please try again.")
+        );
       } else if (error.request) {
         // Request was made but no response received
         console.error("No response received:", error.request);
@@ -148,7 +148,10 @@ export const CHContactForm = () => {
               <span className="primary-title d-block mb-4 text-start">
                 {t("InscriLabel")}
               </span>
-              <h2 className="secondary-title text-start" style={{ fontSize: "1.7em" }}>
+              <h2
+                className="secondary-title text-start"
+                style={{ fontSize: "1.7em" }}
+              >
                 {t("RegistrationLabel")}
               </h2>
             </Col>
@@ -156,7 +159,9 @@ export const CHContactForm = () => {
               <div className={styles.contactUsFormWrapper}>
                 <Row className="align-items-center">
                   <Col xs={12} xl={6}>
-                    <div className={clsx(styles.contactUsImageWrapper, "d-grid")}>
+                    <div
+                      className={clsx(styles.contactUsImageWrapper, "d-grid")}
+                    >
                       <div className={clsx(styles.gridImg, "ratio")}>
                         <img
                           src={contactUsImg1}
@@ -192,7 +197,7 @@ export const CHContactForm = () => {
                         <Row>
                           <Col xs={12} sm={6}>
                             <CHFormControl
-                              controlid="name"
+                              controlid="namecontrolid"
                               id="name"
                               label={t("Name")}
                               type="text"
@@ -205,7 +210,7 @@ export const CHContactForm = () => {
                           </Col>
                           <Col xs={12} sm={6}>
                             <CHFormControl
-                              controlid="email"
+                              controlid="emailcontrolid"
                               id="email"
                               label={t("Email")}
                               type="email"
@@ -218,9 +223,9 @@ export const CHContactForm = () => {
                           </Col>
                           <Col xs={12} sm={6}>
                             <CHFormControl
-                              controlid="date"
+                              controlid="datecontrolid"
                               id="date"
-                              label={t("Date")}
+                              label="Date"
                               type="date"
                               value={formData.date}
                               onChange={handleChange}
@@ -231,11 +236,11 @@ export const CHContactForm = () => {
                           </Col>
                           <Col xs={12}>
                             <CHFormControl
-                              controlid="text"
+                              controlid="textareacontrolid"
                               id="text"
-                              label={t("Message")}
+                              label={t("TellLabel")}
                               as="textarea"
-                              rows="4"
+                              rows="8"
                               value={formData.text}
                               onChange={handleChange}
                               isInvalid={!!errors.text}
@@ -243,7 +248,7 @@ export const CHContactForm = () => {
                             />
                           </Col>
                           <Col xs={12}>
-                            <Form.Group controlId="file">
+                            <Form.Group controlId="fileUpload">
                               <Form.Label>{t("Upload File")}</Form.Label>
                               <Form.Control
                                 type="file"
@@ -255,12 +260,12 @@ export const CHContactForm = () => {
                               </Form.Control.Feedback>
                             </Form.Group>
                           </Col>
-                          <div className="mt-4">
+                          <div className="mt-5 pt-4">
                             <CHButton
                               CHBtnClassname="text-uppercase m-auto text-jet"
                               type="submit"
                             >
-                              {t("Submit")}
+                              {t("SInscriLabel")}
                             </CHButton>
                           </div>
                         </Row>
