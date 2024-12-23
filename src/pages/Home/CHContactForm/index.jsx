@@ -3,14 +3,20 @@ import { Container, Row, Col, Form } from "react-bootstrap";
 import { CHFormControl, CHButton } from "../../../components";
 import clsx from "clsx";
 import styles from "./CHContactForm.module.css";
-import { contactUsImg1, contactUsImg2, contactUsImg3 } from "../../../constant/imageData";
+import {
+  contactUsImg1,
+  contactUsImg2,
+  contactUsImg3,
+} from "../../../constant/imageData";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import CaptchaButton from "../../../components/CaptchaButton";
 
 export const CHContactForm = () => {
   const { t } = useTranslation();
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -18,7 +24,8 @@ export const CHContactForm = () => {
     date: "",
     text: "",
   });
-  const [selectedFile, setSelectedFile] = useState(null); // State for file
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [captchaToken, setCaptchaToken] = useState(null); // State for CAPTCHA
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
@@ -28,12 +35,11 @@ export const CHContactForm = () => {
 
   const handleFileChange = (e) => {
     if (e.target.files && e.target.files.length > 0) {
-      setSelectedFile(e.target.files[0]); // Only take the first selected file
+      setSelectedFile(e.target.files[0]);
     } else {
-      setSelectedFile(null); // Reset the file state if no file is selected
+      setSelectedFile(null);
     }
   };
-  
 
   const validateInputs = () => {
     const newErrors = {};
@@ -46,85 +52,78 @@ export const CHContactForm = () => {
     if (!formData.date.trim()) newErrors.date = t("Date is required.");
     if (!formData.text.trim()) newErrors.text = t("Text is required.");
     if (!selectedFile) newErrors.file = t("File is required.");
+    if (!captchaToken) newErrors.captcha = t("Please complete the CAPTCHA.");
     return newErrors;
   };
 
-
-  
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    // Validate form inputs
+    setIsButtonDisabled(true);
+    console.log("bbbb");
+
     const validationErrors = validateInputs();
     if (Object.keys(validationErrors).length > 0) {
+      console.log(validationErrors);
+      console.log(Object.keys(validationErrors));
+
+      Object.keys(validationErrors).forEach((key) => {
+        toast.error(validationErrors[key]);
+      });
+
       setErrors(validationErrors);
+      setIsButtonDisabled(false); // Re-enable button on validation error
       return;
     }
-    setErrors({}); // Clear errors if validation passes
-  
+
+    console.log("kkkkk");
+    console.log(validationErrors);
+
+    setErrors({});
+
     try {
-      // Prepare form data
       const formDataToSend = new FormData();
       formDataToSend.append("name", formData.name);
       formDataToSend.append("email", formData.email);
       formDataToSend.append("date", formData.date);
       formDataToSend.append("text", formData.text);
-  
+      formDataToSend.append("captchaToken", captchaToken); // Include CAPTCHA token
+
       if (selectedFile) {
-        formDataToSend.append("file", selectedFile);
+        const uniqueCode = Date.now();
+        const fileExtension = selectedFile.name.split(".").pop();
+        const newFileName = `${formData.name}_${uniqueCode}.${fileExtension}`;
+        const renamedFile = new File([selectedFile], newFileName, {
+          type: selectedFile.type,
+        });
+        formDataToSend.append("file", renamedFile);
       }
-  
-      // Log form data for debugging
-      console.log("Submitting form data:", {
-        name: formData.name,
-        email: formData.email,
-        date: formData.date,
-        text: formData.text,
-        file: selectedFile ? selectedFile.name : "No file selected",
-      });
-  
-      // Send the POST request to your API
-      const response = await axios.post("/api/pushToGoogleSheets", formDataToSend, {
-        headers: { "Content-Type": "multipart/form-data" },
-      });
-  
-      // Handle the response
+
+      const response = await axios.post(
+        "/api/pushToGoogleSheets",
+        formDataToSend,
+        {
+          headers: { "Content-Type": "multipart/form-data" },
+        }
+      );
+
       if (response.status === 200 || response.status === 300) {
-        toast.info(response.data.message); // Success toast
-        console.log("Response from server:", response.data);
-  
-        // Optionally, clear the form after successful submission
+        toast.info(response.data.message);
         setFormData({
           name: "",
           email: "",
           date: "",
           text: "",
         });
-        setSelectedFile(null); // Reset the file input
+        setSelectedFile(null);
+        setCaptchaToken(null); // Reset CAPTCHA token
       } else {
         throw new Error(`Unexpected response status: ${response.status}`);
       }
     } catch (error) {
-      // Handle errors
       console.error("Error submitting form:", error);
-  
-      // Provide user-friendly feedback
-      if (error.response) {
-        // Server responded with a status other than 2xx
-        console.error("Server error:", error.response.data);
-        toast.error(
-          error.response.data.error ||
-            t("Failed to submit the form. Please try again.")
-        );
-      } else if (error.request) {
-        // Request was made but no response received
-        console.error("No response received:", error.request);
-        toast.error(t("No response from server. Please try again later."));
-      } else {
-        // Something went wrong setting up the request
-        console.error("Error setting up request:", error.message);
-        toast.error(t("An unexpected error occurred. Please try again."));
-      }
+      toast.error(t("An error occurred. Please try again."));
+    } finally {
+      setIsButtonDisabled(false);
     }
   };
 
@@ -137,7 +136,6 @@ export const CHContactForm = () => {
         hideProgressBar
         toastStyle={{ color: "gold" }}
       />
-
       <section
         className={clsx(styles.contactUsSection, "section-py")}
         id="contactUsSection"
@@ -260,10 +258,17 @@ export const CHContactForm = () => {
                               </Form.Control.Feedback>
                             </Form.Group>
                           </Col>
+
+                          <CaptchaButton
+                            setCaptchaToken={setCaptchaToken}
+                          ></CaptchaButton>
+
                           <div className="mt-5 pt-4">
                             <CHButton
                               CHBtnClassname="text-uppercase m-auto text-jet"
                               type="submit"
+                              disabled={false}
+                              // onClick={handleSubmit} // Reattach the onClick event here
                             >
                               {t("SInscriLabel")}
                             </CHButton>

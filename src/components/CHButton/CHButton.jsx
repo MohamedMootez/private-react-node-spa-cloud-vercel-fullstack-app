@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import clsx from "clsx";
 import { useNavigate } from "react-router-dom";
 import styles from "./CHButton.module.css";

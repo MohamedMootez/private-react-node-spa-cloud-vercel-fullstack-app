@@ -37,3 +37,20 @@
   height: 70rem;
   transition: var(--transition-smooth);
 }
+
+/* New CSS rule for the disabled button */
+button:disabled {
+  background-color: rgba(200, 200, 200, 0.5); /* Light gray background */
+  color: rgba(100, 100, 100, 0.7); /* Muted text color */
+  cursor: not-allowed; /* Change cursor to indicate the button is not clickable */
+  opacity: 0.7; /* Slightly faded appearance */
+  animation: none !important;
+}
+/* New rule for the hover effect of a disabled button */
+button:disabled:hover {
+  background-color: rgba(180, 180, 180, 0.5); /* Slightly darker gray to indicate no interaction */
+  color: rgba(90, 90, 90, 0.7); /* Muted text color on hover */
+  cursor: not-allowed; /* Ensures consistent visual feedback */
+  opacity: 0.7; /* Matches the disabled appearance */
+  animation: none !important;
+}
