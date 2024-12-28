@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { routes } from "./routes";
 import { Suspense } from "react";
+
 // Swiper styles
 import "swiper/css";
 // Bootstrap styles

@@ -16,7 +16,7 @@ import CaptchaButton from "../../../components/CaptchaButton";
 
 export const CHContactForm = () => {
   const { t } = useTranslation();
-  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+  const [setIsButtonDisabled] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -246,14 +246,70 @@ export const CHContactForm = () => {
                             />
                           </Col>
                           <Col xs={12}>
-                            <Form.Group controlId="fileUpload">
-                              <Form.Label>{t("Upload File")}</Form.Label>
-                              <Form.Control
-                                type="file"
-                                onChange={handleFileChange}
-                                isInvalid={!!errors.file}
-                              />
-                              <Form.Control.Feedback type="invalid">
+                            <Form.Group
+                              controlId="fileUpload"
+                              className={clsx(
+                                styles.formWrapper,
+                                "file-upload-container ch-bg-white"
+                              )}
+                            >
+                              <style>
+                                {`
+      .file-upload-container {
+    
+  
+        background-color: #ffffff; /* Matches the rest of the form */
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .file-upload-label {
+        font-size: 1em; /* Matches the input labels */
+
+        margin-bottom: 1rem;
+        color: #333;
+        display: block;
+      }
+
+
+      .file-upload-input {
+ 
+        font-size: 0.6em; /* Matches input text size */
+        border: 1px solid #ced4da; /* Bootstrap default border color */
+        border-radius: 0.25rem;
+        background-color: #f8f9fa; /* Light gray for a subtle contrast */
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+        cursor: pointer;
+      }
+
+      .file-upload-input:hover,
+      .file-upload-input:focus {
+        border-color: #007bff; /* Matches Bootstrap primary color */
+        background-color: #e9ecef;
+      }
+
+      .file-upload-feedback {
+        font-size: 0.875rem; /* Consistent with the other feedback */
+        color: #dc3545; /* Matches error text color */
+        margin-top: 0.5rem;
+      }
+    `}
+                              </style>
+                              <Form.Label className="file-upload-label">
+                                {t("uploadFile")}
+                              </Form.Label>
+                              <div className="file-upload-wrapper">
+                                <Form.Control
+                                  type="file"
+                                  onChange={handleFileChange}
+                                  isInvalid={!!errors.file}
+                                  className="file-upload-input"
+                                />
+                              </div>
+                              <Form.Control.Feedback
+                                type="invalid"
+                                className="file-upload-feedback"
+                              >
                                 {errors.file}
                               </Form.Control.Feedback>
                             </Form.Group>

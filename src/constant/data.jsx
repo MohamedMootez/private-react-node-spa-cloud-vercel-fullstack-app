@@ -1,38 +1,49 @@
 import {
-  bread,
-  burger,
-  pasta,
-  nuddles,
-  salad,
-  sandwich,
-   avatar1, avatar2, avatar3,
-  dishEight, dishFive, dishFour, dishOne, dishSeven, dishSix, dishThree, dishTwo, dishNine
+  specialite1,
+  specialite2,
+  specialite3,
+  specialite4,
+  specialite5,
+  specialite6,
+  avatar1,
+  avatar2,
+  avatar3,
+  formationEight,
+  formationFive,
+  formationFour,
+  formationOne,
+  formationSeven,
+  formationSix,
+  formationThree,
+  formationTwo,
+  formationNine,
 } from "./imageData";
+
 import { icons } from "./icons";
 
 export const ourSpecialitiesList = [
   {
-    image: nuddles,
+    image: specialite1,
     name: "nuddles",
   },
   {
-    image: burger,
+    image: specialite2,
     name: "burger",
   },
   {
-    image: salad,
+    image: specialite3,
     name: "salad",
   },
   {
-    image: bread,
+    image: specialite4,
     name: "bread dish",
   },
   {
-    image: pasta,
+    image: specialite5,
     name: "pasta",
   },
   {
-    image: sandwich,
+    image: specialite6,
     name: "sandwich",
   },
 ];
@@ -73,7 +84,7 @@ export const restaurantTimeMap = [
 
 export const menuDishesData = [
   {
-    imgSrc: dishOne,
+    imgSrc: formationOne,
     dishName: "Grilled salmon salad",
     description: "Savor the Flavors of Grilled Salmon and Fresh Greens.",
     price: "$39",
@@ -81,15 +92,16 @@ export const menuDishesData = [
     ratingCount: 2050,
   },
   {
-    imgSrc: dishTwo,
+    imgSrc: formationTwo,
     dishName: "Chilly Chicken Topped with Sesame",
-    description: "Elevate Your Palate with Teriyaki Chicken and Crisp Cucumber.",
+    description:
+      "Elevate Your Palate with Teriyaki Chicken and Crisp Cucumber.",
     price: "$29",
     rating: 4.3,
     ratingCount: 1080,
   },
   {
-    imgSrc: dishThree,
+    imgSrc: formationThree,
     dishName: "Pasta con le sarde (Pasta with sardines)",
     description: "Evoke the Mediterranean Sun with Every Forkful.",
     price: "$32",
@@ -97,7 +109,7 @@ export const menuDishesData = [
     ratingCount: 2120,
   },
   {
-    imgSrc: dishFour,
+    imgSrc: formationFour,
     dishName: "Italian Salad with Fresh shrimp",
     description: "A Fresh Twist on Italian Seafood: Insalata di Calamari.",
     price: "$24",
@@ -105,15 +117,16 @@ export const menuDishesData = [
     ratingCount: 1030,
   },
   {
-    imgSrc: dishFive,
+    imgSrc: formationFive,
     dishName: "Tomato Soup with Broccoli",
-    description: "Comfort in a Bowl: Where Earthy Vegetables Meet Exotic Spice.",
+    description:
+      "Comfort in a Bowl: Where Earthy Vegetables Meet Exotic Spice.",
     price: "$19",
     rating: 4.1,
     ratingCount: 999,
   },
   {
-    imgSrc: dishSix,
+    imgSrc: formationSix,
     dishName: "Blueberry pan Cake.",
     description: " Blueberry Meets Plumcot in Perfect Harmony.",
     price: "$30",
@@ -121,7 +134,7 @@ export const menuDishesData = [
     ratingCount: 1125,
   },
   {
-    imgSrc: dishSeven,
+    imgSrc: formationSeven,
     dishName: "Cheese Stuffed Burgers",
     description: "Savor the Melt: Homemade Cheese-Stuffed Burgers.",
     price: "$29",
@@ -129,7 +142,7 @@ export const menuDishesData = [
     ratingCount: 1256,
   },
   {
-    imgSrc: dishEight,
+    imgSrc: formationEight,
     dishName: "Stuffed Bell Papers with Coriander",
     description: "Elevate Your Dish with Our Pepper Perfection.",
     price: "$45",
@@ -137,14 +150,14 @@ export const menuDishesData = [
     ratingCount: 1325,
   },
   {
-    imgSrc: dishNine,
+    imgSrc: formationNine,
     dishName: "Fresh Cucumber and Tofu Sushi",
     description: "Fresh Sushi Meets the Opulence of Red Caviar.",
     price: "$39",
     rating: 4.6,
     ratingCount: 1325,
   },
-]
+];
 
 export const drinkNamesData = [
   {
@@ -167,12 +180,13 @@ export const drinkNamesData = [
     drinkVariant: "Cherry Wave /Berry Blast Soda / Mango Breeze Soda",
     price: "$10",
   },
-]
+];
 
 export const dessertsNamesData = [
   {
     dessertName: "Cakes",
-    dessertVariant: "Velvet Dream Cake / Chocolate Decadence / Strawberry Cake ",
+    dessertVariant:
+      "Velvet Dream Cake / Chocolate Decadence / Strawberry Cake ",
     price: "$8",
   },
   {
@@ -182,7 +196,8 @@ export const dessertsNamesData = [
   },
   {
     dessertName: "Donets",
-    dessertVariant: "Blueberry Burst / Coconut Paradise  / Caramel Crunch Rings.",
+    dessertVariant:
+      "Blueberry Burst / Coconut Paradise  / Caramel Crunch Rings.",
     price: "$15",
   },
   {
@@ -190,32 +205,35 @@ export const dessertsNamesData = [
     dessertVariant: "Vanilla Bean Bliss /Coconut Almond Joy / Butter Scooch",
     price: "$8",
   },
-]
+];
 
 export const reviewsSwiperData = [
   {
-   imgSrc: avatar1,
-    reviewMessage: "I've visited many restaurants, but Cooking Healthy Food stands out for its impeccable service and delicious food",
+    imgSrc: avatar1,
+    reviewMessage: "avatarBend1",
+
+    name: "Dhouha Meddeb",
+  },
+  {
+    imgSrc: avatar2,
+    reviewMessage: "avatarBend2",
+    name: "Hedi Atrous",
+  },
+  {
+    imgSrc: avatar3,
+    reviewMessage: "avatarBend3",
+    name: "Asmaa Al-Tounsi",
+  },
+  {
+    imgSrc: avatar1,
+    reviewMessage:
+      "I've visited many restaurants, but Cooking Healthy Food stands out for its impeccable service and delicious food",
     name: "Josie rizal",
   },
   {
-     imgSrc: avatar2,
-    reviewMessage: "The flavors at Cooking Healthy Food  are unmatched. Each dish was a masterpiece",
+    imgSrc: avatar2,
+    reviewMessage:
+      "he flavors at Cooking Healthy Food  are unmatched. Each dish was a masterpiece",
     name: "rachel springer",
   },
-  {
-     imgSrc: avatar3,
-    reviewMessage: "We celebrated a special occasion at Cooking Healthy Food, and it exceeded all expectations",
-    name: "fabien smith",
-  },
-  {
-     imgSrc: avatar1,
-    reviewMessage: "I've visited many restaurants, but Cooking Healthy Food stands out for its impeccable service and delicious food",
-    name: "Josie rizal",
-  },
-  {
-     imgSrc: avatar2,
-    reviewMessage: "he flavors at Cooking Healthy Food  are unmatched. Each dish was a masterpiece",
-    name: "rachel springer",
-  },
-]
+];

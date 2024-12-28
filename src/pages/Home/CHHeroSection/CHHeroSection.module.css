@@ -1,13 +1,14 @@
 .heroSection {
   min-height: 100vh;
-  padding: calc(var(--space-md) + 2rem) 0;
+  padding-top: 90px;
+  /* padding: calc(var(--space-md) + 2rem) 0; */
   background: linear-gradient(180deg,
       rgba(21, 21, 21, 0.37) 0%,
       rgba(21, 21, 21, 0.37) 100%),
-    url("../../../assets/images/banner/hero1.jpg");
+    url("../../../assets/images/elwaeedAssets/hero.jpg");
   background-color: rgba(21, 21, 21, 0.47);
-  background-position: center;
-  background-size: cover;
+  background-position: center 90px; /* Center horizontally, 90px from the top */
+    background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
