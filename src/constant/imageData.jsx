@@ -1,4 +1,3 @@
-import chfLogo from "../assets/images/logo/chf-logo.svg";
 import elWaeedLogo from "../assets/images/logo/elWaeedLogo.png";
 
 import hero from "../assets/images/elwaeedAssets/hero.jpg";
@@ -27,9 +26,6 @@ import formationSeven from "../assets/images/elwaeedAssets/formation7.jpg";
 import formationEight from "../assets/images/elwaeedAssets/formation8.jpg";
 import formationNine from "../assets/images/elwaeedAssets/formation9.jpg";
 
-import dessert from "../assets/images/other/dessert.png";
-import drink from "../assets/images/other/drink.png";
-
 import contactUsImg1 from "../assets/images/elwaeedAssets/contactUsImg1.jpg";
 import contactUsImg2 from "../assets/images/elwaeedAssets/contactUsImg2.jpg";
 import contactUsImg3 from "../assets/images/elwaeedAssets/contactUsImg3.jpg";
@@ -39,7 +35,6 @@ import avatar2 from "../assets/images/elwaeedAssets/avatar1.jpg";
 import avatar3 from "../assets/images/elwaeedAssets/avatar2.jpg";
 
 export {
-  chfLogo,
   elWaeedLogo,
   hero,
   fruitTarte,
@@ -62,8 +57,6 @@ export {
   formationSix,
   formationThree,
   formationTwo,
-  dessert,
-  drink,
   contactUsImg1,
   contactUsImg2,
   contactUsImg3,

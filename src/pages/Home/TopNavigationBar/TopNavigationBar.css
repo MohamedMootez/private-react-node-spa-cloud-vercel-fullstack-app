@@ -36,7 +36,6 @@
   font-weight: 500;
   text-transform: uppercase; /* Modern look */
 }
-
 .isar a {
   color: #fff; /* Standout color */
   text-decoration: none; /* Remove underline */
@@ -67,6 +66,16 @@
   text-decoration: none;
   color: inherit; /* Inherit color for consistency */
 }
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -115,7 +124,7 @@
   font-weight: bold;
   font-size: 1em;
   border-radius: 20px;
-  color: #000;
+  color: #000000a2;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -124,3 +133,70 @@
   background-color: #fff;
   color: #000;
 }
+
+
+/* This is the hamburger menu  */
+
+
+/* Hamburger Menu */
+.hamburger {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 20; /* Ensure it stays above the dropdown */
+  position: relative;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Show hamburger in mobile view */
+    margin-top: 1em;
+  }
+
+  .isar {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 70px; /* Adjust to appear below the header */
+    left: 0;
+    width: 100%;
+    background-color: #000; /* Match the navbar background */
+    z-index: 10;
+    padding: 10px 0;
+    gap: 15px;
+    margin-top: 1em;
+  }
+  .elWaeedLogo {
+    margin-top:-0.4em;
+  }
+  .isar.open {
+    display: flex; /* Show navigation when menu is open */
+    flex-direction: row;
+    background-color: #000000b0;
+    margin-top:-1.8em;
+  }
+
+  .isar a {
+    font-size: 1.2em; /* Increase link size for better touch targets */
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .imin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+}
+

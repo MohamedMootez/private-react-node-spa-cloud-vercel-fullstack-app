@@ -1,31 +1,54 @@
-
-
 import { useTranslation } from "react-i18next";
-import './TopNavigationBar.css';
+import "./TopNavigationBar.css";
 import { elWaeedLogo } from "../../../constant/imageData";
-import {CHInscription} from "../../../components/CHInscription/index.jsx"
-import { CHLanguage } from '../../../components/CHLanguage/index.jsx';
+import { CHInscription } from "../../../components/CHInscription/index.jsx";
+import { CHLanguage } from "../../../components/CHLanguage/index.jsx";
+import { useState } from "react";
+
 export const TopNavigationBar = () => {
   const { t } = useTranslation();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <>
-  
-   <div className="hero">
+    <div className="hero">
+      <a href="#_heroSection_syk8k_1">
+        <img className="elWaeedLogo" src={elWaeedLogo} alt="El Waeed Logo" />
+      </a>
 
-   <a href="#_heroSection_syk8k_1"><img  className="elWaeedLogo" src={elWaeedLogo} alt="" /> </a> 
-    <div className="isar">
-      <a className="active" href="#_heroSection_syk8k_1">{t("aceuilleLabel")}</a>
-      <a href="#_CHDiscoverSection_424bv_1">{t("Sûr-ceLabel")}</a>
-      <a href="#contactUsSection">Contact</a>
+      {/* Hamburger menu for mobile view */}
+      <div className="hamburger" onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+
+      {/* Dropdown menu */}
+      <div className={`isar ${menuOpen ? "open" : ""}`}>
+        <a
+          className="active"
+          href="#_heroSection_syk8k_1"
+          onClick={() => setMenuOpen(false)}
+        >
+          {t("aceuilleLabel")}
+        </a>
+        <a
+          href="#_CHDiscoverSection_424bv_1"
+          onClick={() => setMenuOpen(false)}
+        >
+          {t("Sûr-ceLabel")}
+        </a>
+        <a href="#contactUsSection" onClick={() => setMenuOpen(false)}>
+          Contact
+        </a>
+        <div className="imin">
+          <CHInscription />
+          <CHLanguage />
+        </div>
+      </div>
     </div>
-    <div className="imin">
-       {/* <a href="#contactUsSection">Inscription</a> */}
-       <CHInscription></CHInscription>
-       <CHLanguage></CHLanguage>
-    </div>
-   </div>
-
-
-    </>
   );
 };
