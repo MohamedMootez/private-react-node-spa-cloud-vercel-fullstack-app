@@ -18,7 +18,7 @@ const resources = {
       "ObjectifLabel":"our main objective :",
       "DevloperLabel":"develop the entrepreneurial spirit and strengthen the employability of young people for a promising future.",
 "endroitLabel":"The perfect place to learn",
-"Our Specialties":"Our Specialties",
+"SpecLabçel":"Our Specialties",
 "ExpLabel":"Experience",
 "EveLabel":"Events",
 "TeamLabel":"Our Team",

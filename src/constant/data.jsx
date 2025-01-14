@@ -224,16 +224,4 @@ export const reviewsSwiperData = [
     reviewMessage: "avatarBend3",
     name: "Asmaa Al-Tounsi",
   },
-  {
-    imgSrc: avatar1,
-    reviewMessage:
-      "I've visited many restaurants, but Cooking Healthy Food stands out for its impeccable service and delicious food",
-    name: "Josie rizal",
-  },
-  {
-    imgSrc: avatar2,
-    reviewMessage:
-      "he flavors at Cooking Healthy Food  are unmatched. Each dish was a masterpiece",
-    name: "rachel springer",
-  },
 ];

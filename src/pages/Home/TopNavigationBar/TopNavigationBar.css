@@ -68,53 +68,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .isar {
-    font-size: 1em; /* Adjust font size */
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center;
-    padding: 20px;
-  }
-
-  .isar {
-    margin: 10px 0; /* Space between sections */
-    justify-content: center;
-    gap: 15px; /* Adjust gap */
-  }
-
-  .imin {
-    width: 100%; /* Full width button */
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .isar a {
-    padding: 6px 10px; /* Smaller links */
-    font-size: 1em; /* Reduce font size */
-  }
-
-  .imin {
-    padding: 6px 10px;
-    font-size: 1em; /* Adjust font for mobile */
-  }
-}
-
 /* Scroll Button Styling */
 .scroll-button {
   border: none;
@@ -155,13 +108,33 @@
   border-radius: 2px;
 }
 
+
+
 /* Mobile-specific styles */
 @media (max-width: 768px) {
+
+ 
+  .hero {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    padding: 20px;
+  }
+
+  .isar {
+    margin: 10px 0; /* Space between sections */
+    justify-content: center;
+    gap: 15px; /* Adjust gap */
+  }
+
+  .imin {
+    width: 100%; /* Full width button */
+    text-align: center;
+  }
   .hamburger {
     display: flex; /* Show hamburger in mobile view */
     margin-top: 1em;
   }
-
+  
   .isar {
     display: none; /* Hide navigation links by default */
     flex-direction: column;
@@ -176,22 +149,20 @@
     gap: 15px;
     margin-top: 1em;
   }
-  .elWaeedLogo {
-    margin-top:-0.4em;
-  }
+ 
   .isar.open {
     display: flex; /* Show navigation when menu is open */
     flex-direction: row;
     background-color: #000000b0;
     margin-top:-1.8em;
   }
-
+  
   .isar a {
     font-size: 1.2em; /* Increase link size for better touch targets */
     padding: 10px 0;
     text-align: center;
   }
-
+  
   .imin {
     display: flex;
     flex-direction: row;
@@ -200,3 +171,27 @@
   }
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) { 
+
+  .isar {
+    font-size: 1em; /* Adjust font size */
+  }
+ 
+}
+
+
+
+@media (max-width: 480px) {
+
+ 
+  .isar a {
+    padding: 6px 10px; /* Smaller links */
+    font-size: 1em; /* Reduce font size */
+  }
+
+  .imin {
+    padding: 6px 10px;
+    font-size: 1em; /* Adjust font for mobile */
+  }
+}
