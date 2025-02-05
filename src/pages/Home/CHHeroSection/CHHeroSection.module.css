@@ -1,16 +1,22 @@
 .heroSection {
-  min-height: 70vh;
-  padding-top: 90px;
+
   background-color: rgba(21, 21, 21, 0.47);
   background-position: center 90px; /* Center horizontally, 90px from the top */
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  
+  background-attachment: scroll;
+
+  position: relative;
+
+  height: 90vh; /* Shrink the hero section */
+  min-height: 90vh; /* Ensure it doesn’t stretch */
+ /* Reduce padding */
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   flex-direction: column;
+  overflow: hidden; /* Prevents unwanted stretching */
 }
 
 
@@ -34,14 +40,19 @@
   100% { text-shadow: 0 0 10px rgb(45, 45, 43); }
 }
 .carouselWrapper {
-  height: 70%;
+
   overflow: hidden;
   position: relative;
+
+  height: 100vh; /* Reduce carousel height */
+  max-height: 100vh;
 }
 
 .carouselImage {
-  height: 70%;
-  object-fit: contain;
+  
+
+  height: 100%; /* Ensure images fit within the reduced height */
+  object-fit: cover;
 }
 
 .carouselFooter{

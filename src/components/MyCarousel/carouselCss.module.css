@@ -1,0 +1,108 @@
+/* Default Styling (Mobile/Tablet) */
+.slidecontainer {
+  position: relative;
+  height: 60vh; /* Default height for mobile */
+  overflow: hidden;
+}
+
+/* Ensure Swiper Container Takes Correct Height */
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Ensure Swiper Wrapper Matches the Parent */
+.swiper-wrapper {
+  height: 100% !important;
+}
+
+/* Force Slide Content to Fit Properly */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Slide Content */
+.slideContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure Images Fit Without Stretching */
+.slideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintains aspect ratio */
+}
+
+/* Adjust height for larger screens */
+@media screen and (min-width: 1024px) {
+  .slidecontainer {
+    height: 90vh !important; /* Shrink height on desktop */
+    background-color: rgba(0, 0, 0, 0.784);
+  }
+  .slideImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Maintains aspect ratio */
+  }
+  .mySwiper {
+    height: 90vh !important;
+  }
+
+  .swiper-wrapper {
+    height: 90vh !important;
+  }
+}
+
+/* Center Text Overlay */
+.overlayText {
+  position: absolute;
+  top: 50%; /* Adjusted for better visibility */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+
+/* Elegant Cursive Font for Title */
+.overlayText h2 {
+  font-family: "Playfair Display", serif;
+  font-family: var(--fontSatisfy);
+  font-size: 2.8rem; /* Adjusted for better fit */
+  font-weight: 400 !important;
+  padding-bottom: 0.25rem !important;
+  color: var(--lemon-curry);
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Large, Bold White Text for Main Title */
+.overlayText p {
+  font-family: var(--fontJosefin);
+  font-size: 3.5rem;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  color: white;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Make text smaller on smaller screens */
+@media screen and (max-width: 768px) {
+  .overlayText h2 {
+    font-size: 2rem;
+  }
+
+  .overlayText p {
+    font-size: 2.5rem;
+  }
+}
