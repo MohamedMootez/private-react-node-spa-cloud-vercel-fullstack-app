@@ -1,10 +1,7 @@
 import elWaeedLogo from "../assets/images/logo/elWaeedLogo.png";
 
-import hero from "../assets/images/elwaeedAssets/hero.jpg";
-
-import chefCooking from "../assets/images/elwaeedAssets/chefCooking.jpg";
-
 import fruitTarte from "../assets/images/elwaeedAssets/fruitTarte.jpg";
+import hero from "../assets/images/elwaeedAssets/hero.jpg";
 
 import specialite1 from "../assets/images/elwaeedAssets/specialite1.jpg";
 import specialite2 from "../assets/images/elwaeedAssets/specialite2.jpg";
@@ -33,12 +30,20 @@ import contactUsImg3 from "../assets/images/elwaeedAssets/contactUsImg3.jpg";
 import avatar1 from "../assets/images/elwaeedAssets/avatar3.jpg";
 import avatar2 from "../assets/images/elwaeedAssets/avatar1.jpg";
 import avatar3 from "../assets/images/elwaeedAssets/avatar2.jpg";
+import chefCooking1 from "../assets/images/elwaeedAssets/chefCooking1.jpg";
+import chefCooking2 from "../assets/images/elwaeedAssets/chefCooking2.jpg";
+import hero1 from "../assets/images/elwaeedAssets/hero1.jpg";
+
+import hero2 from "../assets/images/elwaeedAssets/hero2.jpg";
 
 export {
+  chefCooking1,
+  chefCooking2,
   elWaeedLogo,
   hero,
+  hero1,
+  hero2,
   fruitTarte,
-  chefCooking,
   specialite1,
   specialite2,
   specialite3,

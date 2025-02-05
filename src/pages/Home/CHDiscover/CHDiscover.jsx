@@ -2,9 +2,9 @@ import { useTranslation } from "react-i18next";
 
 import { Container } from "react-bootstrap";
 import { clsx } from "clsx";
-import { chefCooking, fruitTarte } from "../../../constant/imageData";
+import { fruitTarte } from "../../../constant/imageData";
 import styles from "./CHDiscover.module.css";
-
+import { chefCooking2 } from "../../../constant/imageData";
 export const CHDiscover = () => {
   const { t } = useTranslation();
   return (
@@ -27,13 +27,12 @@ export const CHDiscover = () => {
                 className={clsx(styles.storyImgCard, "ratio position-relative")}
               >
                 <img
-                  src={chefCooking}
+                  src={chefCooking2}
                   alt="chef"
                   width={"100%"}
                   height={"100%"}
                   className={"object-fit-cover"}
                 />
-                {/* <div className="h4 bg-shadowed-steel ch-text-white d-flex justify-content-center align-items-center">478x591</div> */}
               </div>
               <div
                 className={clsx(

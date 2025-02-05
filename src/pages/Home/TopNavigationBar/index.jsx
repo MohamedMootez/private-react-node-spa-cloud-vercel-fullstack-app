@@ -41,9 +41,9 @@ export const TopNavigationBar = () => {
         >
           {t("Sûr-ceLabel")}
         </a>
-        <a href="#contactUsSection" onClick={() => setMenuOpen(false)}>
+        {/* <a href="#contactUsSection" onClick={() => setMenuOpen(false)}>
           Contact
-        </a>
+        </a> */}
         <div className="imin">
           <CHInscription />
           <CHLanguage />

@@ -5,9 +5,6 @@ import {
   specialite4,
   specialite5,
   specialite6,
-  avatar1,
-  avatar2,
-  avatar3,
   formationEight,
   formationFive,
   formationFour,
@@ -209,18 +206,15 @@ export const dessertsNamesData = [
 
 export const reviewsSwiperData = [
   {
-    imgSrc: avatar1,
     reviewMessage: "avatarBend1",
 
     name: "Dhouha Meddeb",
   },
   {
-    imgSrc: avatar2,
     reviewMessage: "avatarBend2",
     name: "Hedi Atrous",
   },
   {
-    imgSrc: avatar3,
     reviewMessage: "avatarBend3",
     name: "Asmaa Al-Tounsi",
   },

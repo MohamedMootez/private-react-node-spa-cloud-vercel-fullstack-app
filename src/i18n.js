@@ -45,7 +45,7 @@ const resources = {
 
        "aceuilleLabel": "Aceuille",
        "Sûr-ceLabel":"Sûr-ce",
-       "El_WaeedCulinatifLabel":"El Waeed Platfome Culinatif",
+       "El_WaeedCulinatifLabe":"El Waeed Platfome Culinatif",
        "La_PassionLabel":"La Passion du Gout",
        "Au_cœurLabel":"Au cœur de notre monde",
        "QuiLabel":"Qui Sommes -Nous ?",
@@ -82,6 +82,43 @@ const resources = {
 
 
     },
+  },
+  ar:{
+    
+translation:{
+  "aceuilleLabel": "الرئيسية",
+ "Sûr-ceLabel":"عن",
+"El_WaeedCulinatifLabe":"منصة الوعد للطهي",
+ "La_PassionLabel":"شغف الذوق",
+ "Au_cœurLabel":"في قلب عالمنا",
+      "QuiLabel":"من نحن؟",
+ "LàléléganceLabel":"حيث تجتمع النكهة مع الأناقة",
+"FondationLabel":"تأسست الواعد عام 2005، وقد أثبتت نفسها كمرجع في التدريب المهني في مجال المعجنات والطهي، وذلك بفضل أكثر من 30 عامًا من الخبرة لمديرها. ومن خلال اتباع نهج عملي، تقدم المدرسة تدريبًا عالي الجودة معترف به من قبل السلطات المحلية، مراكز التوظيف والمشرفين التربويين.",
+"PartenaireLabel":"شريك في نظام 33 للصندوق الوطني للتشغيل 21/21، يساهم الواعد بنشاط في إعادة الإدماج المهني من خلال الإجراءات المستهدفة والتعاون مع مكاتب التشغيل.",
+"ObjectifLabel":"هدفنا الرئيسي :",
+"DevloperLabel":"تنمية روح المبادرة وتعزيز قابلية توظيف الشباب من أجل مستقبل واعد.",
+"endroitLabel":"المكان المثالي للتعلم",
+  "SpecLabel":"تخصصاتنا",
+     "ExpLabel":"خبرة",
+"EveLabel":"الأحداث",
+ "TeamLabel":"فريقنا",
+ "RenLabel": "لقاء شغفنا",
+"InscriLabel":" !سجل هنا",
+    "RegistrationLabel":"انضم إلى برنامجنا اليوم!",
+  "Name":"اسم",
+      "Email":"بريد إلكتروني",
+    "SInscriLabel":"يسجل",
+     "TellLabel":"أخبرنا المزيد عن نفسك!",
+     "adressLabel":"عنوان",
+ "openTimeLabel":"نحن منفتحون",
+"ConnectLabel":"دعونا نبقى على اتصال",
+ "copyrights":"© 2024 Platfome Culinaire، من صنع رونين.",
+"inscriLabel":" سجل هنا",
+"uploadFile":"رفع الملف",
+"avatarBend1":"لقد بدأت كطاهية علمت نفسي بنفسي وأحب الطعام والإبداع. والآن، فإن إدارة مدرسة للطهي جعلت حلمي حقيقة، وبات كل يوم يبدو وكأنه مغامرة جديدة.",
+"avatarBend2":"مع سنوات من التدريب المهني والخبرة في أفضل المطاعم وحتى على متن سفينة سياحية، أشعر بالفخر بمشاركة شغفي بالطهي لإلهام طلابنا.",
+"avatarBend3":"باعتباري مدافعًا فخورًا عن تراث الطهي التونسي، أحب مزج النكهات التقليدية مع التقنيات الحديثة لإنشاء أطباق ",}
+
   },
 };
 
