@@ -1,19 +1,23 @@
 /* Default Styling (Mobile/Tablet) */
 .slidecontainer {
+ 
   position: relative;
-  height: 60vh; /* Default height for mobile */
+  height: 70%; /* Default height for mobile */
+  display: flex;
+  align-items: flex-end;
+  
   overflow: hidden;
 }
 
 /* Ensure Swiper Container Takes Correct Height */
 .mySwiper {
   width: 100%;
-  height: 100%;
+  height: 70%;
 }
 
 /* Ensure Swiper Wrapper Matches the Parent */
 .swiper-wrapper {
-  height: 100% !important;
+  height: 70% !important;
 }
 
 /* Force Slide Content to Fit Properly */
@@ -21,50 +25,57 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 70%;
 }
 
 /* Slide Content */
 .slideContent {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; /* Stack content vertically */
+
 }
 
 /* Ensure Images Fit Without Stretching */
 .slideImage {
   width: 100%;
-  height: 100%;
+  height: 70%;
   object-fit: cover; /* Maintains aspect ratio */
+
 }
 
 /* Adjust height for larger screens */
 @media screen and (min-width: 1024px) {
   .slidecontainer {
-    height: 90vh !important; /* Shrink height on desktop */
+    height: 70vh !important; /* Shrink height on desktop */
     background-color: rgba(0, 0, 0, 0.784);
   }
   .slideImage {
     width: 100%;
-    height: 100%;
-    object-fit: contain; /* Maintains aspect ratio */
+    height: 100vh;
+    object-fit:cover; /* Maintains aspect ratio */
+  
   }
+  .slideContent {
+  
+}
   .mySwiper {
-    height: 90vh !important;
+    height: 70vh !important;
   }
 
   .swiper-wrapper {
-    height: 90vh !important;
+    height: 70vh!important;
   }
 }
 
 /* Center Text Overlay */
 .overlayText {
   position: absolute;
-  top: 50%; /* Adjusted for better visibility */
+  top: 55%; /* Adjusted for better visibility */
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -75,9 +86,9 @@
 .overlayText h2 {
   font-family: "Playfair Display", serif;
   font-family: var(--fontSatisfy);
-  font-size: 2.8rem; /* Adjusted for better fit */
+  font-size: 5rem; /* Adjusted for better fit */
   font-weight: 400 !important;
-  padding-bottom: 0.25rem !important;
+  
   color: var(--lemon-curry);
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -86,7 +97,7 @@
 /* Large, Bold White Text for Main Title */
 .overlayText p {
   font-family: var(--fontJosefin);
-  font-size: 3.5rem;
+  font-size: 6.5rem;
   font-weight: 700 !important;
   text-transform: uppercase !important;
   --bs-text-opacity: 1;
@@ -105,4 +116,15 @@
   .overlayText p {
     font-size: 2.5rem;
   }
+}
+
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev){
+    color: white !important;
+   
+    border-radius: 50% !important;
+}
+:global(.swiper-pagination ) {
+  --swiper-theme-color: white!important;
 }

@@ -16,9 +16,26 @@
   z-index: -1;
 }
 
+
 .reviewsSwiperWrapper {
-  margin-top: calc(7.2rem - 20px);
+
+  width: 100%;
 }
+
+.swiper-wrapper {
+  display: flex ;
+  justify-content: center;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto !important; /* Adjust width automatically */
+  max-width: 400px; /* Limit max width */
+}
+
+
 
 .reviewSwiper .reviewAvatarCard {
   width: 72px;
@@ -41,10 +58,10 @@
 }
 
 .reviewSwiper:global.swiper {
-  padding: 0 1rem;
+  padding: 0 1rem; 
 }
 
 .reviewSwiper:global.swiper .swiper-slide {
-  height: auto;
-  padding: 20px 0;
+   height: auto;
+  padding: 20px 0; 
 }

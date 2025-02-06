@@ -3,14 +3,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { hero, hero1, hero2 } from "../../constant/imageData";
+import { hero, hero1, hero2, hero3, hero4 } from "../../constant/imageData";
 import { useTranslation } from "react-i18next"; // Import translation hook
 import styles from "./carouselCss.module.css";
 
 const MyCarousel = () => {
   const { t } = useTranslation(); // Translation function
 
-  const slides = [hero, hero1, hero2];
+  const slides = [hero4, hero, hero1, hero2, hero3];
 
   return (
     <div className={styles.slidecontainer}>
@@ -18,11 +18,11 @@ const MyCarousel = () => {
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={10}
         slidesPerView={1}
-        loop={slides.length > 2} // Enable loop only if enough slides
+        loop={slides.length > 2}
         autoplay={{ delay: 6000, disableOnInteraction: false }}
         navigation
         pagination={{ clickable: true }}
-        className={styles.mySwiper} // Apply fixed styles
+        className={styles.mySwiper}
       >
         {slides.map((src, index) => (
           <SwiperSlide key={index} className={styles.swiperSlide}>

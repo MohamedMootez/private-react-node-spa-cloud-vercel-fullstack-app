@@ -17,31 +17,20 @@ export const CHReviews = () => {
         className={clsx(styles.reviewSection, "section-py position-relative")}
       >
         <Container className="z-1">
-          <div>
+          <div className="reviewSectionHeadlines">
             <span className="primary-title d-block mb-4">{t("TeamLabel")}</span>
             <h2 className="secondary-title text-white">{t("RenLabel")} </h2>
           </div>
           <div className={styles.reviewsSwiperWrapper}>
             <Swiper
+              centeredSlides={true} // Center active slide
+              slidesPerView={"auto"} // Adjust width dynamically
               breakpoints={{
-                0: {
-                  slidesPerView: 1,
-                  spaceBetween: 15,
-                },
-                481: {
-                  slidesPerView: 1.5,
-                  spaceBetween: 15,
-                },
-                576: {
-                  slidesPerView: 2,
-                  spaceBetween: 15,
-                },
-                992: {
-                  slidesPerView: 3,
-                  spaceBetween: 20,
-                },
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                576: { slidesPerView: 2, spaceBetween: 15 },
+                992: { slidesPerView: 3, spaceBetween: 20 },
               }}
-              autoplay={true}
+              autoplay={{ delay: 3000 }}
               loop={true}
               modules={[Autoplay]}
               className={styles.reviewSwiper}

@@ -28,7 +28,7 @@ export const CHLanguage = () => {
           className="LanguageButtons"
           onClick={() => changeLanguage("ar")}
         >
-          🇸🇦
+          🇹🇳
         </button>
       </div>
     </>

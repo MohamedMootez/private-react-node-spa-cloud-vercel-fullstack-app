@@ -2,44 +2,6 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
 const resources = {
-  en: {
-    translation: {
-
-      "aceuilleLabel": "Home",
-      "Sûr-ceLabel":"About",
-      "El_WaeedCulinatifLabe":"El Waeed Culinary Platform",
-      "La_PassionLabel":"The Passion for Taste",
-      "Au_cœurLabel":"At the Heart of Our Universe",
-      "QuiLabel":"Who are we ?",
-      "LàléléganceLabel":"Where Flavor Meets Elegance",
-      
-      "FondationLabel":"Founded in 2005, EL WAEED has established itself as a reference in professional training in pastry and cooking, thanks to more than 30 years of experience of its manager. With a practice-oriented approach, the school offers quality training recognized by local authorities, employment centers, and educational supervisors.",
-      "PartenaireLabel":"Partner of the 33 system of the national employment fund 21/21, EL WAEED actively contributes to professional reintegration through targeted actions and collaborations with employment offices.",
-      "ObjectifLabel":"our main objective :",
-      "DevloperLabel":"develop the entrepreneurial spirit and strengthen the employability of young people for a promising future.",
-"endroitLabel":"The perfect place to learn",
-"SpecLabçel":"Our Specialties",
-"ExpLabel":"Experience",
-"EveLabel":"Events",
-"TeamLabel":"Our Team",
-"RenLabel":"Meet Our Passionate",
-"InscriLabel":"Register Here !",
-"RegistrationLabel":"Join Our Program Today!",
-"Name":"Name",
-"Email":"Email",
-"SInscriLabel":"Register",
-"TellLabel":"Tell us more about Yourself !",
- "adressLabel":"Address",
- "openTimeLabel":"We are open",
- "ConnectLabel":"Let's stay Connected",
- "copyrights":"© 2024 Platfome Culinaire, Made by Ronin.",
- "inscriLabel":"Register Here",
- "uploadFile":"Upload File",
- "avatarBend1":"I began as a self-taught cook with a love for food and creativity. Now, running a culinary school has made my dream a reality, and every day feels like a new adventure.",
- "avatarBend2":"With years of professional training and experience in top restaurants and even aboard a cruise ship, I take pride in sharing my passion for cooking to inspire our students.",
- "avatarBend3":"As a proud advocate of Tunisian culinary heritage, I love blending traditional flavors with modern techniques to create dishes that tell a story.",
-    },
-  },
   fr: {
     translation: {
 
@@ -83,6 +45,45 @@ const resources = {
 
     },
   },
+  en: {
+    translation: {
+
+      "aceuilleLabel": "Home",
+      "Sûr-ceLabel":"About",
+      "El_WaeedCulinatifLabe":"El Waeed Culinary Platform",
+      "La_PassionLabel":"The Passion for Taste",
+      "Au_cœurLabel":"At the Heart of Our Universe",
+      "QuiLabel":"Who are we ?",
+      "LàléléganceLabel":"Where Flavor Meets Elegance",
+      
+      "FondationLabel":"Founded in 2005, EL WAEED has established itself as a reference in professional training in pastry and cooking, thanks to more than 30 years of experience of its manager. With a practice-oriented approach, the school offers quality training recognized by local authorities, employment centers, and educational supervisors.",
+      "PartenaireLabel":"Partner of the 33 system of the national employment fund 21/21, EL WAEED actively contributes to professional reintegration through targeted actions and collaborations with employment offices.",
+      "ObjectifLabel":"our main objective :",
+      "DevloperLabel":"develop the entrepreneurial spirit and strengthen the employability of young people for a promising future.",
+"endroitLabel":"The perfect place to learn",
+"SpecLabçel":"Our Specialties",
+"ExpLabel":"Experience",
+"EveLabel":"Events",
+"TeamLabel":"Our Team",
+"RenLabel":"Meet Our Passionate",
+"InscriLabel":"Register Here !",
+"RegistrationLabel":"Join Our Program Today!",
+"Name":"Name",
+"Email":"Email",
+"SInscriLabel":"Register",
+"TellLabel":"Tell us more about Yourself !",
+ "adressLabel":"Address",
+ "openTimeLabel":"We are open",
+ "ConnectLabel":"Let's stay Connected",
+ "copyrights":"© 2024 Platfome Culinaire, Made by Ronin.",
+ "inscriLabel":"Register Here",
+ "uploadFile":"Upload File",
+ "avatarBend1":"I began as a self-taught cook with a love for food and creativity. Now, running a culinary school has made my dream a reality, and every day feels like a new adventure.",
+ "avatarBend2":"With years of professional training and experience in top restaurants and even aboard a cruise ship, I take pride in sharing my passion for cooking to inspire our students.",
+ "avatarBend3":"As a proud advocate of Tunisian culinary heritage, I love blending traditional flavors with modern techniques to create dishes that tell a story.",
+    },
+  },
+
   ar:{
     
 translation:{
@@ -126,7 +127,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: "en", // Default language
+    lng: "fr", // Default language
     interpolation: {
       escapeValue: false,
     },

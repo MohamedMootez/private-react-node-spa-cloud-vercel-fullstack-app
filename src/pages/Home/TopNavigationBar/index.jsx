@@ -38,12 +38,11 @@ export const TopNavigationBar = () => {
         <a
           href="#_CHDiscoverSection_424bv_1"
           onClick={() => setMenuOpen(false)}
+          className="surceLabel"
         >
           {t("Sûr-ceLabel")}
         </a>
-        {/* <a href="#contactUsSection" onClick={() => setMenuOpen(false)}>
-          Contact
-        </a> */}
+
         <div className="imin">
           <CHInscription />
           <CHLanguage />

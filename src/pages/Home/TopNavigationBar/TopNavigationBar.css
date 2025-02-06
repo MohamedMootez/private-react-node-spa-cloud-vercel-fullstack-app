@@ -4,8 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between; /* Dynamic spacing for better alignment */
-  position: fixed;
-  z-index: 5;
   width: 100%;
   padding: 10px 30px; /* Improved spacing */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -27,6 +25,10 @@
   transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
+.surceLabel{
+  display: flex;
+  align-items: center;
+}
 /* Navigation Menu */
 .isar {
   display: flex;
@@ -36,6 +38,7 @@
   font-weight: 500;
   text-transform: uppercase; /* Modern look */
 }
+
 .isar a {
   color: #fff; /* Standout color */
   text-decoration: none; /* Remove underline */
@@ -147,20 +150,21 @@
     z-index: 10;
     padding: 10px 0;
     gap: 15px;
-    margin-top: 1em;
+    
   }
  
   .isar.open {
     display: flex; /* Show navigation when menu is open */
-    flex-direction: row;
+    flex-direction: column;
     background-color: #000000b0;
-    margin-top:-1.8em;
+   margin-top: -2em;
   }
   
   .isar a {
     font-size: 1.2em; /* Increase link size for better touch targets */
-    padding: 10px 0;
+    padding: 10px 0px;
     text-align: center;
+  
   }
   
   .imin {
@@ -183,11 +187,21 @@
 
 
 @media (max-width: 480px) {
-
+.hero{
+display: flex;
+}
+.isar{
+  margin-top: -1em;
+}
  
   .isar a {
     padding: 6px 10px; /* Smaller links */
     font-size: 1em; /* Reduce font size */
+   
+
+  }
+  .surceLabel{
+    display: none;
   }
 
   .imin {

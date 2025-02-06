@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 import { clsx } from "clsx";
 import { fruitTarte } from "../../../constant/imageData";
 import styles from "./CHDiscover.module.css";
-import { chefCooking2 } from "../../../constant/imageData";
+import { chefCooking3 } from "../../../constant/imageData";
 export const CHDiscover = () => {
   const { t } = useTranslation();
   return (
@@ -27,7 +27,7 @@ export const CHDiscover = () => {
                 className={clsx(styles.storyImgCard, "ratio position-relative")}
               >
                 <img
-                  src={chefCooking2}
+                  src={chefCooking3}
                   alt="chef"
                   width={"100%"}
                   height={"100%"}
