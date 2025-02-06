@@ -16,8 +16,7 @@ export const CHOurSpecialities = () => {
       >
         <Container>
           <span className="primary-title mb-4 d-block text-capitalize">
-          {t("endroitLabel")}
-
+            {t("endroitLabel")}
           </span>
           <h2 className="secondary-title text-white">{t("SpecLabel")}</h2>
           <div className={styles.ourSpecialitiesGrid}>
@@ -26,7 +25,10 @@ export const CHOurSpecialities = () => {
                 return (
                   <div
                     key={index}
-                    className={clsx(styles.specialityFoodImgWrap, "ratio image-hover-scale")}
+                    className={clsx(
+                      styles.specialityFoodImgWrap,
+                      "ratio image-hover-scale"
+                    )}
                   >
                     <img
                       src={item.image}
@@ -35,7 +37,6 @@ export const CHOurSpecialities = () => {
                       height={"100%"}
                       className="object-fit-cover"
                     />
-                    {/* <div className="h6 bg-woodprecker-green text-white d-flex justify-content-center align-items-center w-100 h-100">400x300</div> */}
                   </div>
                 );
               })}

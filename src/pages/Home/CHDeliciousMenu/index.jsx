@@ -51,10 +51,10 @@ export const CHDeliciousMenu = () => {
                                   "text-jet fw-bold font-josefin text-ellipsis line-clamp-3"
                                 )}
                               >
-                                {dish.dishName}
+                                {t(dish.dishName)}
                               </h5>
                               <p className="text-ellipsis text-shadowed-steel line-clamp-4">
-                                {dish.description}
+                                {t(dish.description)}
                               </p>
                             </div>
                           </div>
