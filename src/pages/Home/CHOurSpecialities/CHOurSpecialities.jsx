@@ -16,9 +16,9 @@ export const CHOurSpecialities = () => {
       >
         <Container>
           <span className="primary-title mb-4 d-block text-capitalize">
-            {t("endroitLabel")}
+            {t("ExpLabel")}
           </span>
-          <h2 className="secondary-title text-white">{t("SpecLabel")}</h2>
+          <h2 className="secondary-title text-white">{t("EveLabel")}</h2>
           <div className={styles.ourSpecialitiesGrid}>
             {ourSpecialitiesList &&
               ourSpecialitiesList.map((item, index) => {

@@ -8,7 +8,7 @@
 
 .footerGridWrap {
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 10px;
+
 }
 
 .footerDetailsCard:not(:last-child) {
@@ -53,34 +53,119 @@
     padding-right: 25px;
     margin-right: 20px;
   }
+  .footerSection{
+    display: block !important;
+    
+  }
+  .footerGridWrap {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    width:90em !important;
+    margin: 0;
+  }
 }
 
 @media (max-width: 1199px) {
   .footerGridWrap {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 3rem;
+    
   }
 
   .footerDetailsCard:not(:last-child) {
     border-right: 0;
   }
+  .footerSection{
+    display: block !important;
+    
+  }
+  .footerGridWrap {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    width:90em !important;
+    margin: 0;
+  }
 }
 
 @media (max-width: 991px) {
+  .footerSection{
+    display: block !important;
+    
+  }
   .footerGridWrap {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .footerGridWrap {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    width:80em !important;
   }
 }
 
 @media (max-width: 767px) {
   .footerGridWrap {
     grid-template-columns: repeat(2, 1fr);
+ 
+  
+  }
+  .footerSection{
+    display: block !important;
+ 
+    
+  }
+  .footerGridWrap {
+   
+    width:90em !important;
   }
 }
 
 @media (max-width: 480px) {
   .footerGridWrap {
     grid-template-columns: repeat(1, 1fr);
+
+
+ 
+
   }
+  .footerDetailsCard{
+
+  }
+  .footerSection{
+    display: flex !important;
+    justify-content: center !important;
+flex-direction: column-reverse !important;
+
+ 
+    
+  }
+ 
 }
 /* resposnive css end */
+
+.timeDayCard{
+  width:100%;
+}
+
+html[dir="rtl"] .timeDayCard {
+  text-align: right; /* Align text properly */
+direction: rtl;
+}
+
+html[dir="rtl"] .timeDayCard .d-flex {
+  flex-direction: row-reverse; /* Reverse direction for RTL */
+  justify-content: space-between;
+}
+
+
+html[dir="rtl"] .timeDayCard .d-flex {
+  flex-direction: row-reverse; /* Reverse direction for RTL */
+}
+html[dir="rtl"] .footerGridWrap {
+  direction: rtl;
+}
+.timeDayCard strong, 
+.timeDayCard p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

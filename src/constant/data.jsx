@@ -7,12 +7,18 @@ import {
   specialite6,
   avatar3,
   avatar2,
-  formationFive,
-  formationFour,
-  formationOne,
-  formationSix,
-  formationThree,
-  formationTwo,
+  formationA,
+  formationB,
+  formationC,
+  formationD,
+  formationE,
+  formationF,
+  formationG,
+  formationH,
+  formationI,
+  formationJ,
+  formationK,
+  formationL,
 } from "./imageData";
 
 import { icons } from "./icons";
@@ -53,10 +59,7 @@ export const socialLinksMap = [
     socialLink: "https://www.youtube.com/",
     socialIconName: icons.youtubeIcon,
   },
-  {
-    socialLink: "https://x.com/?lang=en",
-    socialIconName: icons.twitterIcon,
-  },
+
   {
     socialLink: "https://www.instagram.com/",
     socialIconName: icons.instagramIcon,
@@ -65,22 +68,38 @@ export const socialLinksMap = [
 
 export const restaurantTimeMap = [
   {
-    restaurantWeek: "Mon-Fri",
-    restaurantTime: "8am-11pm",
+    restaurantWeek: "dayA",
+    restaurantTime: "timeA",
   },
   {
-    restaurantWeek: "Sun",
-    restaurantTime: "10am-4pm",
+    restaurantWeek: "dayB",
+    restaurantTime: "timeB",
   },
   {
-    restaurantWeek: "Sat",
-    restaurantTime: "10am-6pm",
+    restaurantWeek: "dayC",
+    restaurantTime: "timeC",
   },
 ];
 
 export const menuDishesData = [
   {
-    imgSrc: formationOne,
+    imgSrc: formationA,
+    dishName: "CuisineT",
+    description: "CuisineTD",
+    price: "$30",
+    rating: 4.7,
+    ratingCount: 1125,
+  },
+  {
+    imgSrc: formationB,
+    dishName: "PatT",
+    description: "PatTD",
+    price: "$30",
+    rating: 4.7,
+    ratingCount: 1125,
+  },
+  {
+    imgSrc: formationC,
     dishName: "CuisineO",
     description: "CuisineOD",
     price: "$39",
@@ -88,7 +107,7 @@ export const menuDishesData = [
     ratingCount: 2050,
   },
   {
-    imgSrc: formationTwo,
+    imgSrc: formationL,
     dishName: "Pat",
     description: "PatD",
     price: "$29",
@@ -96,7 +115,23 @@ export const menuDishesData = [
     ratingCount: 1080,
   },
   {
-    imgSrc: formationThree,
+    imgSrc: formationD,
+    dishName: "CuisineE",
+    description: "CuisineED",
+    price: "$30",
+    rating: 4.7,
+    ratingCount: 1125,
+  },
+  {
+    imgSrc: formationE,
+    dishName: "PatE",
+    description: "PatED",
+    price: "$30",
+    rating: 4.7,
+    ratingCount: 1125,
+  },
+  {
+    imgSrc: formationF,
     dishName: "vien",
     description: "vienD",
     price: "$32",
@@ -104,7 +139,7 @@ export const menuDishesData = [
     ratingCount: 2120,
   },
   {
-    imgSrc: formationFour,
+    imgSrc: formationG,
     dishName: "Bou",
     description: "BouD",
     price: "$24",
@@ -112,17 +147,34 @@ export const menuDishesData = [
     ratingCount: 1030,
   },
   {
-    imgSrc: formationFive,
+    imgSrc: formationI,
+    dishName: "chou",
+    description: "chouD",
+    price: "$30",
+    rating: 4.7,
+    ratingCount: 1125,
+  },
+  {
+    imgSrc: formationH,
+    dishName: "AmuseBoucheT",
+    description: "AmuseBoucheTD",
+    price: "$30",
+    rating: 4.7,
+    ratingCount: 1125,
+  },
+  {
+    imgSrc: formationJ,
     dishName: "Fastf",
     description: "FastfD",
     price: "$19",
     rating: 4.1,
     ratingCount: 999,
   },
+
   {
-    imgSrc: formationSix,
-    dishName: "chou",
-    description: "chouD",
+    imgSrc: formationK,
+    dishName: "KidCookingT",
+    description: "KidCookingTD",
     price: "$30",
     rating: 4.7,
     ratingCount: 1125,

@@ -2,7 +2,7 @@
 .slidecontainer {
  
   position: relative;
-  height: 70%; /* Default height for mobile */
+  height: 100%; /* Default height for mobile */
   display: flex;
   align-items: flex-end;
   
@@ -12,12 +12,12 @@
 /* Ensure Swiper Container Takes Correct Height */
 .mySwiper {
   width: 100%;
-  height: 70%;
+  height: 100%;
 }
 
 /* Ensure Swiper Wrapper Matches the Parent */
 .swiper-wrapper {
-  height: 70% !important;
+  height: 100% !important;
 }
 
 /* Force Slide Content to Fit Properly */
@@ -25,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70%;
+  height: 100%;
 }
 
 /* Slide Content */
@@ -43,7 +43,7 @@
 /* Ensure Images Fit Without Stretching */
 .slideImage {
   width: 100%;
-  height: 70%;
+  height:100%;
   object-fit: cover; /* Maintains aspect ratio */
 
 }
@@ -51,12 +51,12 @@
 /* Adjust height for larger screens */
 @media screen and (min-width: 1024px) {
   .slidecontainer {
-    height: 70vh !important; /* Shrink height on desktop */
-    background-color: rgba(0, 0, 0, 0.784);
+    height: 100% /* Shrink height on desktop */
+
   }
   .slideImage {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit:cover; /* Maintains aspect ratio */
   
   }
@@ -64,11 +64,11 @@
   
 }
   .mySwiper {
-    height: 70vh !important;
+    height: 100% !important;
   }
 
   .swiper-wrapper {
-    height: 70vh!important;
+    height: 100%!important;
   }
 }
 
@@ -126,5 +126,5 @@
     border-radius: 50% !important;
 }
 :global(.swiper-pagination ) {
-  --swiper-theme-color: white!important;
+  --swiper-theme-color: #cba525!important;
 }

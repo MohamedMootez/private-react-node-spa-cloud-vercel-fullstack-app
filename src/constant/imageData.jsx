@@ -18,15 +18,18 @@ import specialite7 from "../assets/images/elwaeedAssets/specialite7.jpg";
 import specialite8 from "../assets/images/elwaeedAssets/specialite8.jpg";
 import specialite9 from "../assets/images/elwaeedAssets/specialite9.jpg";
 
-import formationOne from "../assets/images/elwaeedAssets/formation1.jpg";
-import formationTwo from "../assets/images/elwaeedAssets/formation2.jpg";
-import formationThree from "../assets/images/elwaeedAssets/formation3.jpg";
-import formationFour from "../assets/images/elwaeedAssets/formation4.jpg";
-import formationFive from "../assets/images/elwaeedAssets/formation5.jpg";
-import formationSix from "../assets/images/elwaeedAssets/formation6.jpg";
-import formationSeven from "../assets/images/elwaeedAssets/formation7.jpg";
-import formationEight from "../assets/images/elwaeedAssets/formation8.jpg";
-import formationNine from "../assets/images/elwaeedAssets/formation9.jpg";
+import formationC from "../assets/images/CuisineOriental/formationC.jpg";
+import formationL from "../assets/images/PatisserieOriental/formationL.jpg";
+import formationB from "../assets/images/PatisserieTunisien/formationB.jpg";
+import formationA from "../assets/images/CuisineTunisien/formationA.jpg";
+import formationD from "../assets/images/EuropeanCooking/formationD.jpg";
+import formationE from "../assets/images/EuropeanPastery/formationE.jpg";
+import formationF from "../assets/images/Viennoiserie/formationF.png";
+import formationG from "../assets/images/Baking/formationG.jpg";
+import formationH from "../assets/images/AmuseBouche/formationH.jpg";
+import formationI from "../assets/images/Chocolaterie/formationI.jpg";
+import formationJ from "../assets/images/FastFood/formationJ.jpg";
+import formationK from "../assets/images/KidsCooking/formationK.jpg";
 
 import contactUsImg1 from "../assets/images/elwaeedAssets/contactUsImg1.jpg";
 import contactUsImg2 from "../assets/images/elwaeedAssets/contactUsImg2.jpg";
@@ -50,6 +53,18 @@ export {
   hero2,
   hero3,
   hero4,
+  formationA,
+  formationD,
+  formationB,
+  formationC,
+  formationE,
+  formationF,
+  formationG,
+  formationH,
+  formationI,
+  formationJ,
+  formationK,
+  formationL,
   fruitTarte,
   specialite1,
   specialite2,
@@ -60,15 +75,6 @@ export {
   specialite7,
   specialite8,
   specialite9,
-  formationEight,
-  formationFive,
-  formationFour,
-  formationNine,
-  formationOne,
-  formationSeven,
-  formationSix,
-  formationThree,
-  formationTwo,
   contactUsImg1,
   contactUsImg2,
   contactUsImg3,

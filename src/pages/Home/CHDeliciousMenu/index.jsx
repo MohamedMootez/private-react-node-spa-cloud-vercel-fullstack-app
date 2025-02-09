@@ -14,8 +14,10 @@ export const CHDeliciousMenu = () => {
       >
         <Container>
           <div>
-            <span className="primary-title d-block mb-4">{t("ExpLabel")}</span>
-            <h2 className="secondary-title">{t("EveLabel")}</h2>
+            <span className="primary-title d-block mb-4">
+              {t("endroitLabel")}
+            </span>
+            <h2 className="secondary-title">{t("SpecLabel")}</h2>
           </div>
           <div className={styles.menuDishesWrapper}>
             <Row className="g-4">

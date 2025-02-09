@@ -24,7 +24,7 @@ const resources = {
 
       "SpecLabel":"Nos Spécialités",
      "ExpLabel": "Expérience",
-     "EveLabel":"Événement",
+     "EveLabel":"Jeter un coup d'œil en douce",
      "TeamLabel":"Notre Équipe",
      "RenLabel":"Rencontrez Nos Passionnée",
      "InscriLabel":"Inscrivez Vous Ici !",
@@ -41,10 +41,20 @@ const resources = {
     "copyrights":"© 2024 Plateforme Culinaire, Réalisé par Ronin.",
      "inscriLabel":"S'inscrire",
      "uploadFile":"Télécharger votre Fichier",
-
+     ////
+     "CuisineT": "Cuisine Tunisienne",
+    "CuisineTD": "Découvrez les saveurs authentiques de la cuisine tunisienne, un mélange unique d'épices, de traditions et d'influences méditerranéennes.",
+    "CuisineE": "Cuisine Européenne",
+    "CuisineED": "Explorez la richesse de la cuisine européenne, des classiques français aux spécialités italiennes et espagnoles.",
+    "PatT": "Pâtisserie Orientale",
+    "PatTD": "Apprenez l'art délicat de la pâtisserie orientale, des douceurs sucrées aux recettes traditionnelles.",
+    "PatE": "Pâtisserie Européenne",
+    "PatED": "Maîtrisez les techniques de la pâtisserie européenne, des viennoiseries françaises aux desserts raffinés.",
+  
+////
      "CuisineO":"Cuisine Oriental",
      "CuisineOD":"Maîtrisez l'art de la cuisine orientale en explorant les saveurs riches et les techniques de cuisson traditionnelles du Moyen-Orient et de l'Afrique du Nord.",
-     "Pat":"Pâtisserie",
+     "Pat":"Pâtisserie Oriental",
 "PatD":"Apprenez l'art délicat de la pâtisserie, des classiques français aux créations modernes.",
      "vien":"Viennoiserie",
      "vienD":"Maîtrisez les techniques de la viennoiserie, du croissant au pain au chocolat, avec un accent sur la pâte feuilletée et la fermentation.",
@@ -54,13 +64,33 @@ const resources = {
      "FastfD":"Apprenez les bases de la restauration rapide en mettant l'accent sur l'efficacité, la qualité et les tendances modernes.",
      "chou":"Chocolaterie",
      "chouD":"Découvrez l'art de la chocolaterie, du processus de la fève à la tablette aux techniques de tempérage et de création de confiseries exquises.",
-    
+     "adresse":"Avenue de l'Indépendance, Denden, Tunis, Tunisie",
 
+  "dayA":"Lun - Ven: 8h - 23h", 
+  "timeA":"",
+  "dayB":"Sam: 10h - 18h",
+  "timeB":"",
+"dayC":"Dim: 10h - 16h",
+"timeC":"",
+
+"Contact":"Contact",
+"KidCookingT": "Cuisine pour Enfants",
+    "KidCookingTD": "Initiez les enfants à la cuisine avec des recettes ludiques, simples et adaptées à leur âge.",
+    "AmuseBoucheT": "Amuse-Bouche",
+    "AmuseBoucheTD": "Apprenez à préparer de délicieuses bouchées apéritives, parfaites pour impressionner vos invités.",
 
     },
   },
   en: {
     translation: {
+      "CuisineT": "Tunisian Cuisine",
+    "CuisineTD": "Discover the authentic flavors of Tunisian cuisine, a unique blend of spices, traditions, and Mediterranean influences.",
+    "CuisineE": "European Cuisine",
+    "CuisineED": "Explore the richness of European cuisine, from French classics to Italian and Spanish specialties.",
+    "PatT": "Oriental Pastry",
+    "PatTD": "Learn the delicate art of oriental pastry, from sweet delights to traditional recipes.",
+    "PatE": "European Pastry",
+    "PatED": "Master the techniques of European pastry, from French viennoiseries to refined desserts.",
 
       "aceuilleLabel": "Home",
       "Sûr-ceLabel":"About",
@@ -77,7 +107,7 @@ const resources = {
 "endroitLabel":"The perfect place to learn",
 "SpecLabçel":"Our Specialties",
 "ExpLabel":"Experience",
-"EveLabel":"Events",
+"EveLabel":" Sneak a Peek",
 "TeamLabel":"Our Team",
 "RenLabel":"Meet Our Passionate",
 "InscriLabel":"Register Here !",
@@ -108,12 +138,35 @@ const resources = {
      "FastfD":"Learn the essentials of fast food preparation, focusing on efficiency, quality, and modern trends in quick-service cuisine.",
      "chou":"Chocolate Workshop ",
      "chouD":"Discover the art of chocolate making, from bean-to-bar processes to tempering techniques and crafting exquisite chocolate confections.",
+     "adresse":"Independence Avenue, Denden, Tunis, Tunisia",
+     "dayA":"Mon - Fri: 8 AM - 11 PM", 
+     "timeA":"",
+     "dayB":"Sat: 10 AM - 6PM",
+     "timeB":"",
+   "dayC":"Sun: 10 AM - 4PM",
+   "timeC":"",
+   "Contact":"Contact",
+   "KidCookingT": "Kid-Friendly Cooking",
+    "KidCookingTD": "Introduce kids to cooking with fun, simple, and age-appropriate recipes.",
+    "AmuseBoucheT": "Amuse-Bouche",
+    "AmuseBoucheTD": "Learn to prepare delicious bite-sized appetizers, perfect for impressing your guests."
+
     },
   },
 
   ar:{
     
 translation:{
+
+  "CuisineT": "المطبخ التونسي",
+  "CuisineTD": "اكتشف النكهات الأصيلة للمطبخ التونسي، مزيج فريد من التوابل والتقاليد والتأثيرات المتوسطية.",
+  "CuisineE": "المطبخ الأوروبي",
+  "CuisineED": "استكشف روائع المطبخ الأوروبي، من الكلاسيكيات الفرنسية إلى التخصصات الإيطالية والإسبانية.",
+  "PatT": "الحلويات الشرقية",
+  "PatTD": "تعلم فن الحلويات الشرقية، من الأطباق الحلوة إلى الوصفات التقليدية.",
+  "PatE": "الحلويات الأوروبية",
+  "PatED": "أتقن تقنيات الحلويات الأوروبية، من الفطائر الفرنسية إلى الحلويات الراقية.",
+
   "aceuilleLabel": "الرئيسية",
  "Sûr-ceLabel":"عن",
 "El_WaeedCulinatifLabe":"منصة الوعد للطهي",
@@ -128,7 +181,7 @@ translation:{
 "endroitLabel":"المكان المثالي للتعلم",
   "SpecLabel":"تخصصاتنا",
      "ExpLabel":"خبرة",
-"EveLabel":"الأحداث",
+"EveLabel":"ألقِ نظرة خفية",
  "TeamLabel":"فريقنا",
  "RenLabel": "لقاء شغفنا",
 "InscriLabel":" !سجل هنا",
@@ -157,8 +210,20 @@ translation:{
 "Fastf": "الوجبات السريعة",
 "FastfD":"تعلم أساسيات تحضير الوجبات السريعة مع التركيز على الكفاءة والجودة وأحدث الاتجاهات في هذا المجال",
 "chou": "مصنع الشوكولاتة",
-"chouD":"استكشف فن صناعة الشوكولاتة، بدءًا من عملية تحويل حبوب الكاكاو إلى لوح شوكولاتة، وتقنيات التلميع، وصناعة الحلويات الفاخرة",}
-
+"chouD":"استكشف فن صناعة الشوكولاتة، بدءًا من عملية تحويل حبوب الكاكاو إلى لوح شوكولاتة، وتقنيات التلميع، وصناعة الحلويات الفاخرة",
+"adresse":"شارع الاستقلال دندن، تونس، تونس",
+"dayA":"الإثنين - الجمعة:8 صباحًا8 - 11 مساءً", 
+"timeA":" ",
+"dayB":"السبت: صباحًا10 - 6 مساءً",
+"timeB":" 10 ",
+"dayC":"الأحد: 10 صباحًا10 - 4 مساءً",
+"timeC":"",
+"Contact":"اتصال",
+"KidCookingT": "الطبخ للأطفال",
+    "KidCookingTD": "قدم للأطفال تجربة ممتعة في المطبخ بوصفات سهلة وبسيطة تناسب أعمارهم.",
+    "AmuseBoucheT": "المقبلات الفاخرة",
+    "AmuseBoucheTD": "تعلم تحضير مقبلات شهية صغيرة الحجم، مثالية لإبهار ضيوفك."
+}
   },
 };
 
@@ -173,3 +238,4 @@ i18n
   });
 
 export default i18n;
+ 
