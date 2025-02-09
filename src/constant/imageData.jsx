@@ -21,7 +21,8 @@ import specialite9 from "../assets/images/elwaeedAssets/specialite9.jpg";
 import formationC from "../assets/images/CuisineOriental/formationC.jpg";
 import formationL from "../assets/images/PatisserieOriental/formationL.jpg";
 import formationB from "../assets/images/PatisserieTunisien/formationB.jpg";
-import formationA from "../assets/images/CuisineTunisien/formationA.jpg";
+
+import formationA from "../assets/images/CuisineTunisien/FormationA.jpg";
 import formationD from "../assets/images/EuropeanCooking/formationD.jpg";
 import formationE from "../assets/images/EuropeanPastery/formationE.jpg";
 import formationF from "../assets/images/Viennoiserie/formationF.png";
