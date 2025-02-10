@@ -10,7 +10,7 @@
   transition: background-color 0.3s ease; /* Smooth transitions for hover effects */
   font-family: var(--fontJosefin);
   animation: fadeIn 1.5s ease-in-out; /* Hero section fade-in */
-  position: fixed;
+ position:fixed;
   top: 0;
   left: 0;
   width: 100%;
