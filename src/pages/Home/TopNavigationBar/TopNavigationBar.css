@@ -1,64 +1,45 @@
-/* Hero Section */
+/* Navbar Container */
 .hero {
   background-color: #000;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Dynamic spacing for better alignment */
+  justify-content: space-between;
   width: 100%;
-  padding: 10px 30px; /* Improved spacing */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: background-color 0.3s ease; /* Smooth transitions for hover effects */
-  font-family: var(--fontJosefin);
-  animation: fadeIn 1.5s ease-in-out; /* Hero section fade-in */
- position:fixed;
+  padding: 10px 20px;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  background: #000000bb; /* Adjust color */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.737); 
-  z-index: 1000; /* Ensures it stays above other elements */
-
-
+  right: 0;
+  z-index: 1000;
 }
 
-
-/* Logo Styling */
+/* Logo */
 .elWaeedLogo {
-  height: 70px;
-  width: auto; /* Maintain aspect ratio */
+  height: 60px;
+  width: auto;
   cursor: pointer;
-  transition: transform 0.3s ease; /* Subtle animation */
 }
 
-.elWaeedLogo:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
-}
-
-.surceLabel{
-  display: flex;
-  align-items: center;
-}
 /* Navigation Menu */
 .isar {
   display: flex;
-  gap: 20px; /* Space between links */
-  font-weight: bolder;
+  gap: 20px;
+  font-weight: bold;
   font-size: 1em;
-  font-weight: 500;
-  text-transform: uppercase; /* Modern look */
+  text-transform: uppercase;
 }
 
 .isar a {
-  color: #fff; /* Standout color */
-  text-decoration: none; /* Remove underline */
+  color: #fff;
+  text-decoration: none;
   padding: 8px 12px;
-  border-radius: 5px; /* Smooth edges */
+  border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .isar a:hover {
   background-color: #fff;
-  color: #000; /* Reverse colors for emphasis */
+  color: #000;
 }
 
 /* Active Link */
@@ -67,154 +48,62 @@
   color: #fff;
 }
 
-/* Call to Action Button */
+/* Call to Action Buttons */
 .imin {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
 }
-
-.imin a {
-  text-decoration: none;
-  color: inherit; /* Inherit color for consistency */
-}
-
-
-/* Scroll Button Styling */
-.scroll-button {
-  border: none;
-  background-color: #cba525; /* Highlighted color */
-  padding: 10px 20px;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 1em;
-  border-radius: 20px;
-  color: #000000a2;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.scroll-button:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-
-/* This is the hamburger menu  */
-
 
 /* Hamburger Menu */
 .hamburger {
-  display: none; /* Hidden by default */
-  flex-direction: column;
+  display: none;
+  background: none;
+  border: none;
   cursor: pointer;
-  gap: 5px;
-  z-index: 20; /* Ensure it stays above the dropdown */
-  position: relative;
 }
 
-.hamburger .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  border-radius: 2px;
+.hamburger svg {
+  width: 35px;
+  height: 35px;
+  color: #fff;
 }
 
-
-
-/* Mobile-specific styles */
+/* Mobile Styles */
 @media (max-width: 768px) {
-
- 
   .hero {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center;
-    padding: 20px;
+    padding: 15px;
   }
 
-  .isar {
-    margin: 10px 0; /* Space between sections */
-    justify-content: center;
-    gap: 15px; /* Adjust gap */
-  }
-
-  .imin {
-    width: 100%; /* Full width button */
-    text-align: center;
-  }
   .hamburger {
-    display: flex; /* Show hamburger in mobile view */
-    margin-top: 1em;
+    display: block;
   }
-  
+
   .isar {
-    display: none; /* Hide navigation links by default */
-    flex-direction: column;
-    align-items: center;
+    display: none;
     position: absolute;
-    top: 70px; /* Adjust to appear below the header */
+    top: 60px;
     left: 0;
     width: 100%;
-    background-color: #000; /* Match the navbar background */
-    z-index: 10;
-    padding: 10px 0;
-    gap: 15px;
-    
-  }
- 
-  .isar.open {
-    display: flex; /* Show navigation when menu is open */
+    background-color: rgba(0, 0, 0, 0.9);
     flex-direction: column;
-    background-color: #000000b0;
-   margin-top: -2em;
-  }
-  
-  .isar a {
-    font-size: 1.2em; /* Increase link size for better touch targets */
-    padding: 10px 0px;
-    text-align: center;
-  
-  }
-  
-  .imin {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 10px;
+    padding: 10px 0;
+    text-align: center;
   }
-}
 
-/* Responsive Design */
-@media (max-width: 1024px) { 
-
-  .isar {
-    font-size: 1em; /* Adjust font size */
+  .isar.open {
+    display: flex;
   }
- 
-}
 
-
-
-@media (max-width: 480px) {
-.hero{
-display: flex;
-}
-.isar{
-  margin-top: -1em;
-}
- 
   .isar a {
-    padding: 6px 10px; /* Smaller links */
-    font-size: 1em; /* Reduce font size */
-   
-
-  }
-  .surceLabel{
-    display: none;
+    font-size: 1.2em;
+    padding: 10px;
+    width: 100%;
   }
 
   .imin {
-    padding: 6px 10px;
-    font-size: 1em; /* Adjust font for mobile */
+    flex-direction: column;
+    gap: 5px;
   }
 }

@@ -1,9 +1,10 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./TopNavigationBar.css";
 import { elWaeedLogo } from "../../../constant/imageData";
 import { CHInscription } from "../../../components/CHInscription/index.jsx";
 import { CHLanguage } from "../../../components/CHLanguage/index.jsx";
-import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export const TopNavigationBar = () => {
   const { t } = useTranslation();
@@ -20,11 +21,13 @@ export const TopNavigationBar = () => {
       </a>
 
       {/* Hamburger menu for mobile view */}
-      <div className="hamburger" onClick={toggleMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
-      </div>
+      <button className="hamburger" onClick={toggleMenu}>
+        {menuOpen ? (
+          <X size={30} color="#fff" />
+        ) : (
+          <Menu size={30} color="#fff" />
+        )}
+      </button>
 
       {/* Dropdown menu */}
       <div className={`isar ${menuOpen ? "open" : ""}`}>

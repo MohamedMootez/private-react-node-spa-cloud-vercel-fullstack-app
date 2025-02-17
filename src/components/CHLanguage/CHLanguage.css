@@ -1,9 +1,9 @@
-.LanguageButton{
+.LanguageButton {
   display: flex;
   justify-content: center;
   align-items: center;
-    margin-left: 1em;
-    border: none;
+  margin-left: 1em;
+  border: none;
   background-color: #cba525; /* Highlighted color */
   padding: 10px 20px;
   font-style: italic;
@@ -13,19 +13,19 @@
   color: #000;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
- width: 107.2px;
- height: 44px;
+  width: 107.2px;
+  height: 44px;
 }
+
 .LanguageButton:hover {
-    background-color: #fff;
-    color: #000;
-  }
-.LanguageButtons{
- 
-    border: none;
-background-color: #00000000;
+  background-color: #fff;
+  color: #000;
+}
+
+.LanguageButtons {
+  border: none;
+  background-color: transparent;
   font-size: 1.5em;
   color: #000;
   cursor: pointer;
-
 }

@@ -9,22 +9,17 @@ import { CHDeliciousMenu } from "./CHDeliciousMenu";
 
 import { CHReviews } from "./CHReviews";
 
-
 const Home = () => {
   return (
-    
-  
-   <>
-
-      <TopNavigationBar/>
-
+    <>
+      <TopNavigationBar />
 
       <CHHeroSection />
-  
+
       <CHDiscover />
       <CHOurSpecialities />
       <CHDeliciousMenu />
-     
+
       <CHReviews />
       <CHContactForm />
       <CHFooter />
