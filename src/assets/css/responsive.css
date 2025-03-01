@@ -1,0 +1,117 @@
+@media (max-width: 1799px) {}
+
+@media (max-width: 1599px) {}
+
+@media (max-width: 1439px) {}
+
+@media (max-width: 1429px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1365px) {}
+
+@media (max-width: 1279px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1199px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  /* FONT SIZES START */
+  .h5.big,
+  h5.big {
+    font-size: 22px;
+  }
+
+  .h5,
+  h5 {
+    font-size: 20px;
+  }
+
+  p.big,
+  .p.big {
+    font-size: 16px;
+  }
+
+  p,
+  .p {
+    font-size: 15px;
+  }
+
+  p.sm,
+  .p.sm {
+    font-size: 12px;
+  }
+
+  /* FONT SIZES END */
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 6.5px;
+  }
+
+  /* FONT SIZES START */
+  .h5.big,
+  h5.big {
+    font-size: 20px;
+  }
+
+  .h5,
+  h5 {
+    font-size: 18px;
+  }
+
+  p.big,
+  .p.big {
+    font-size: 16px;
+  }
+
+  p,
+  .p {
+    font-size: 14px;
+  }
+
+  /* FONT SIZES END */
+}
+
+@media (max-width: 767px) {
+
+  /* FONT SIZES START */
+  .h5.big,
+  h5.big {
+    font-size: 18px;
+  }
+
+  .h5,
+  h5 {
+    font-size: 16px;
+  }
+
+  p.big,
+  .p.big {
+    font-size: 14px;
+  }
+
+  p,
+  .p {
+    font-size: 12px;
+  }
+
+  /* FONT SIZES END */
+}
+
+@media (max-width: 575px) {}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 350px) {}

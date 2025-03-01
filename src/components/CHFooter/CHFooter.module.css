@@ -1,0 +1,163 @@
+.footerSection {
+  background-color: var(--matt-black);
+  padding: 40px 0 0;
+}
+
+.footerDetailsCard {
+  margin-bottom: 30px;
+}
+
+.footerDetailsCard span {
+  margin-bottom: 12px;
+}
+
+.footerGridWrap {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footerDetailsCard:not(:last-child) {
+  padding-right: 30px;
+  border-right: 1px solid rgba(var(--rgb-white), 0.3);
+}
+
+.footerLogoWrap {
+  max-width: 130px;
+  margin-bottom: 20px;
+}
+
+.footerSection ul {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footerSection ul li a {
+  width: 45px;
+  height: 45px;
+  background-color: var(--bleached-silk);
+  transition: var(--transition-smooth);
+  color: var(--shadowed-steel);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.footerSection li a span {
+  width: 24px;
+  height: 24px;
+}
+
+.footerSection a:hover {
+  color: var(--lemon-curry);
+}
+
+.footerSection ul li a:hover {
+  background-color: var(--lemon-curry);
+  color: var(--white);
+}
+
+.copyrightWrapper {
+  border-top: 1px solid var(--shadowed-steel);
+  padding: 20px 0;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Responsive CSS */
+@media (max-width: 1199px) {
+  .footerGridWrap {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 900px;
+  }
+
+  .footerDetailsCard:not(:last-child) {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .footerGridWrap {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footerSection {
+    padding: 30px 0 0;
+  }
+
+  .footerGridWrap {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 15px;
+  }
+
+  .footerDetailsCard:not(:last-child) {
+    padding-right: 0;
+    border-right: none;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(var(--rgb-white), 0.3);
+  }
+
+  .footerLogoWrap {
+    margin: 0 auto 20px;
+  }
+
+  .footerSection ul {
+    justify-content: center;
+  }
+
+  .copyrightWrapper {
+    margin-top: 30px;
+    padding: 15px 0;
+  }
+}
+
+/* RTL Support */
+html[dir="rtl"] .footerGridWrap {
+  direction: rtl;
+}
+
+html[dir="rtl"] .footerDetailsCard:not(:last-child) {
+  padding-right: 0;
+  padding-left: 30px;
+  border-right: none;
+  border-left: 1px solid rgba(var(--rgb-white), 0.3);
+}
+
+@media (max-width: 767px) {
+  html[dir="rtl"] .footerDetailsCard:not(:last-child) {
+    padding-left: 0;
+    border-left: none;
+  }
+}
+
+.timeDayCard {
+  width: 100%;
+}
+
+html[dir="rtl"] .timeDayCard {
+  text-align: right;
+  direction: rtl;
+}
+
+html[dir="rtl"] .timeDayCard .d-flex {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.timeDayCard strong,
+.timeDayCard p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

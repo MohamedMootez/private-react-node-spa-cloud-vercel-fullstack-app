@@ -1,0 +1,93 @@
+.heroSection {
+
+  background-color: rgba(21, 21, 21, 0.47);
+  background-position: center 90px; /* Center horizontally, 90px from the top */
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  background-attachment: scroll;
+
+  position: relative;
+
+  height: 90vh; /* Shrink the hero section */
+  min-height: 90vh; /* Ensure it doesn’t stretch */
+ /* Reduce padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden; /* Prevents unwanted stretching */
+}
+
+
+.logo {
+  max-width: 11.4rem;
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.headline{
+  position: absolute;
+  z-index: 2;
+
+  animation: flicker 2s infinite alternate;
+}
+@keyframes flicker {
+  0% { text-shadow: 0 0 10px rgb(45, 45, 43); }
+  50% { text-shadow: 0 0 20px rgb(45, 45, 43); }
+  100% { text-shadow: 0 0 10px rgb(45, 45, 43); }
+}
+.carouselWrapper {
+
+  overflow: hidden;
+  position: relative;
+
+  height: 100vh; /* Reduce carousel height */
+  max-height: 100vh;
+}
+
+.carouselImage {
+  
+
+  height: 100%; /* Ensure images fit within the reduced height */
+  object-fit: cover;
+}
+
+.carouselFooter{
+  display: flex;
+  justify-content: center;
+}
+
+#firstPart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2; /* Higher z-index than secondPart */
+  text-align: center;
+}
+
+#secondPart {
+  position: relative; /* Base container for stacking */
+  z-index: 1;
+  flex-grow: 1; /* Allows this section to take up the most space */
+}
+
+#thirdPart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3; /* Higher z-index than secondPart and firstPart */
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+Container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

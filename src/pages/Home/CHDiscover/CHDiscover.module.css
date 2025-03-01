@@ -1,0 +1,88 @@
+.CHDiscoverSection {
+  background-image: url("../../../assets/images/banner/tan-color-banner.jpg");
+  background-color: var(--sugar-milk);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0.4em !important;
+
+text-align: center;
+
+}
+
+
+/* Highlighted Text */
+.highlightText {
+  display: inline-block;
+  font-size: 0.9em; /* Slightly larger than body text */
+  font-weight: bold;
+  font-style: italic;
+  padding: 2px 2px;
+  color: #fff; /* White text for contrast */
+  background-color: #cba525; /* Gold background for emphasis */
+  border-radius: 5px; /* Rounded edges for a modern look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect for Span */
+.highlightText:hover {
+  transform: scale(1.0009); /* Slight zoom on hover */
+  background-color: #fff; /* Reverse colors on hover */
+  color: #cba525; /* Gold text */
+}
+
+.storyCImgWrap {
+  max-width: 478px;
+  flex: 0 0 auto;
+}
+
+.storyImgCard {
+  --bs-aspect-ratio: 124%;
+}
+
+.storyContent {
+  align-content: center;
+  padding: 4.5rem;
+}
+
+.storyCard {
+  border-radius: 3px;
+  display: flex;
+  justify-content: stretch;
+  margin-top: 4.8rem;
+}
+
+.storySubImgCard {
+  border: 3px solid var(--white);
+  max-width: 38.7rem;
+  max-height: 28.1rem;
+  right: -50%;
+  bottom: -8%;
+}
+
+/* resposnive css start */
+@media (max-width: 1023px) {
+  .storyCard {
+    flex-direction: column-reverse;
+  }
+
+  .storyContent {
+    padding: 0;
+    margin-bottom: 4.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .storySubImgCard {
+    right: -10%;
+  }
+}
+
+@media (max-width: 575px) {
+  .storySubImgCard {
+    display: none;
+  }
+}
+
+/* resposnive css end */

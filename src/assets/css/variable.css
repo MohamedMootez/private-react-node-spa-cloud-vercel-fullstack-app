@@ -1,0 +1,32 @@
+:root {
+  /* FONT FAMILY */
+  --fontPoppins: "Poppins", Arial, sans-serif;
+  --fontJosefin: "Josefin Sans", Helvetica, sans-serif;
+  --fontSatisfy: "Satisfy", "Brush Script MT", cursive;
+  /* COLOR */
+  --matt-black: #151515;
+  --white: #fff;
+  --rgb-white: 225, 225, 225;
+  --black: #000;
+  --rgb-black: 0, 0, 0;
+  --rgba-black: var(--rgb-black);
+  --jet: #343434;
+  --shadowed-steel: #4b4b4b;
+  --explosive-grey: #c4c4c4;
+  --guinea-pig-white: #e8e4d6;
+  --cold-morning: #e5e5e5;
+  --bleached-silk: #f3f3f3;
+  --rgb-matt-black: 21, 21, 21;
+  --lemon-curry: #cba525;
+  --sugar-milk: #fffbf5;
+  --dugong: #707070;
+  --woodprecker-green: #9A8F6B;
+  --rgb-woodprecker-green: 154, 143, 107;
+  --tangerine-yellow: #fece01;
+  /* SPACE */
+  --space-md: 10rem;
+  --space-sm: 7.2rem;
+  --space-xs: 5rem;
+  /* TRANSITION */
+  --transition-smooth: all 0.3s;
+}

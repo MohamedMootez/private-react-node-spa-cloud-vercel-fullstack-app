@@ -1,0 +1,343 @@
+/* DEFAULT CSS START */
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: var(--fontPoppins);
+  color: var(--shadowed-steel);
+  font-size: 16px;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+}
+
+section,
+footer,
+header {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.h1,
+.h2,
+.h3,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
+/* FONT FAMILY */
+.font-poppins {
+  font-family: var(--fontPoppins);
+}
+
+.font-josefin {
+  font-family: var(--fontJosefin);
+}
+
+.font-satisfy {
+  font-family: var(--fontSatisfy);
+}
+
+/* FONT SIZE */
+.h1,
+h1 {
+  font-size: 7rem;
+}
+
+.h1.small {
+  font-size: 5.6rem;
+}
+
+.h2,
+h2 {
+  font-size: 3.7rem;
+}
+
+.h3,
+h3 {
+  font-size: 3.2rem;
+}
+
+.h4,
+h4 {
+  font-size: 2.8rem;
+}
+
+.h5.big,
+h5.big {
+  font-size: 25px;
+}
+
+.h5,
+h5 {
+  font-size: 22px;
+}
+
+.h6,
+h6 {
+  font-size: 20px;
+}
+
+p.big,
+.p.big {
+  font-size: 18px;
+}
+
+p,
+.p {
+  font-size: 16px;
+}
+
+p.sm,
+.p.sm {
+  font-size: 14px;
+}
+
+/* TEXT COLOR */
+.ch-text-white {
+  color: var(--white);
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.text-jet {
+  color: var(--jet);
+}
+
+.text-lemon-curry {
+  color: var(--lemon-curry);
+}
+
+.text-shadowed-steel {
+  color: var(--shadowed-steel);
+}
+
+.text-dugong {
+  color: var(--dugong);
+}
+
+/* BACKGROUND COLOR */
+.ch-bg-white {
+  background-color: var(--white);
+}
+
+.bg-shadowed-steel {
+  background-color: var(--shadowed-steel);
+}
+
+.bg-dugong {
+  background-color: var(--dugong);
+}
+
+.bg-sugar-milk {
+  background-color: var(--sugar-milk);
+}
+
+.bg-woodprecker-green {
+  background-color: var(--woodprecker-green);
+}
+
+/* SIZE */
+.w-max-content {
+  width: max-content;
+}
+
+.h-max-content {
+  height: max-content;
+}
+
+.max-w-max-content {
+  max-width: max-content;
+}
+
+.min-h-inherit {
+  min-height: inherit;
+}
+
+.w-inherit {
+  width: inherit;
+}
+
+.h-inherit {
+  height: inherit;
+}
+
+/* COMMON CSS */
+.line-height-0 {
+  line-height: 0;
+}
+
+.lh-16 {
+  line-height: 1.6;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.flex-0-auto {
+  flex: 0 0 auto;
+}
+
+.bg-size-cover {
+  background-size: cover;
+}
+
+.object-position-top {
+  object-position: top;
+}
+
+/* TEXT CLAMP */
+.text-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+
+}
+
+.line-clamp-1 {
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  -webkit-line-clamp: 3;
+}
+
+.line-clamp-4 {
+  -webkit-line-clamp: 4;
+}
+
+.line-clamp-5 {
+  -webkit-line-clamp: 5;
+}
+
+/* LINK CSS */
+a {
+  color: var(--lemon-curry);
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+a:hover {
+  color: var(--black);
+}
+
+/* IMAGES RATIO */
+.image-hover-scale {
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.image-hover-scale img {
+  transition: var(--transition-smooth);
+}
+
+.image-hover-scale:hover img {
+  transform: scale(1.07);
+}
+
+/* SECTION SPACING */
+.section-py {
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-md);
+}
+
+.section-pt {
+  padding-top: var(--space-md);
+}
+
+.section-pb {
+  padding-bottom: var(--space-md);
+}
+
+.section-my {
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.section-mt {
+  margin-top: var(--space-md);
+}
+
+.section-mb {
+  margin-bottom: var(--space-md);
+}
+
+/* SECTION TITLE */
+.primary-title {
+  font-family: var(--fontSatisfy);
+  color: var(--lemon-curry);
+  font-size: 3.7rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: normal;
+}
+
+.secondary-title {
+  text-align: center;
+  color: var(--jet);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--fontJosefin);
+  font-size: 3.7rem;
+}
+
+/* TRACK */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 4px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: var(--transition-smooth);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sugar-milk);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--lemon-curry);
+  border-radius: 10px;
+}
+
+/* LINE HEIGHT */
+.lh-0 {
+  line-height: 0;
+}
+
+.line-height-normal {
+  line-height: 1.65;
+}
+
+/* DEFAULT CSS END */

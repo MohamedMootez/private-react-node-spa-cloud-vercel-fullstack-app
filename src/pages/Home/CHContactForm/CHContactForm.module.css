@@ -1,0 +1,176 @@
+.contactUsSection {
+  /* background-image: url("../../../assets/images/banner/tan-color-banner.jpg"); */
+  background-color: rgba(var(--rgb-matt-black), 0.2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px 0;
+}
+
+.contactUsFormWrapper {
+  margin-top: 40px;
+}
+
+.contactUsImageWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.gridImg {
+  --bs-aspect-ratio: 112%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gridImg img,
+.gridImg3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gridImg:hover img,
+.gridImg3:hover img {
+  transform: scale(1.05);
+}
+
+.gridImg3 {
+  --bs-aspect-ratio: 48%;
+  grid-column: 1 / -1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.formWrapper {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* File Upload Styles */
+.file-upload-container {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 20px;
+  border: 2px dashed var(--cold-morning);
+  transition: all 0.3s ease;
+}
+
+.file-upload-container:hover {
+  border-color: var(--lemon-curry);
+  background-color: var(--sugar-milk);
+}
+
+.file-upload-label {
+  font-size: 14px;
+  color: var(--shadowed-steel);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.file-upload-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--cold-morning);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Google Map */
+.googleMap iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .contactUsSection {
+    padding: 40px 0;
+  }
+
+  .contactUsFormWrapper {
+    margin-top: 30px;
+  }
+
+  .formWrapper {
+    padding: 25px;
+  }
+
+  .googleMap iframe {
+    height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contactUsSection {
+    padding: 30px 0;
+  }
+
+  .contactUsFormWrapper {
+    margin-top: 20px;
+  }
+
+  .contactUsImageWrapper {
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .formWrapper {
+    padding: 20px;
+  }
+
+  .file-upload-container {
+    padding: 15px;
+  }
+
+  .googleMap iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contactUsImageWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .gridImg3 {
+    --bs-aspect-ratio: 60%;
+  }
+
+  .formWrapper {
+    padding: 15px;
+  }
+
+  .googleMap iframe {
+    height: 250px;
+  }
+}
+
+/* New CSS rule for the disabled button */
+button:disabled {
+  background-color: rgba(200, 200, 200, 0.5); /* Light gray background */
+  color: rgba(100, 100, 100, 0.7); /* Muted text color */
+  cursor: not-allowed; /* Change cursor to indicate the button is not clickable */
+  opacity: 0.7; /* Slightly faded appearance */
+  animation: none !important;
+}
+/* New rule for the hover effect of a disabled button */
+button:disabled:hover {
+  background-color: rgba(
+    180,
+    180,
+    180,
+    0.5
+  ); /* Slightly darker gray to indicate no interaction */
+  color: rgba(90, 90, 90, 0.7); /* Muted text color on hover */
+  cursor: not-allowed; /* Ensures consistent visual feedback */
+  opacity: 0.7; /* Matches the disabled appearance */
+  animation: none !important;
+}

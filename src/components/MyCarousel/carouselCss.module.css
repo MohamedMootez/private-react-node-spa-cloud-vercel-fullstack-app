@@ -1,0 +1,166 @@
+/* Default Styling (Mobile/Tablet) */
+.slidecontainer {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Ensure Swiper Container Takes Correct Height */
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Ensure Swiper Wrapper Matches the Parent */
+.swiper-wrapper {
+  height: 100% !important;
+}
+
+/* Force Slide Content to Fit Properly */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Slide Content */
+.slideContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure Images Fit Without Stretching */
+.slideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Center Text Overlay */
+.overlayText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+/* Elegant Cursive Font for Title */
+.overlayText h2 {
+  font-family: var(--fontSatisfy);
+  color: var(--lemon-curry);
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Large, Bold White Text for Main Title */
+.overlayText p {
+  font-family: var(--fontJosefin);
+  text-transform: uppercase;
+  color: white;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+/* Responsive Text Sizes */
+@media screen and (min-width: 1200px) {
+  .overlayText h2 {
+    font-size: 5rem;
+  }
+  .overlayText p {
+    font-size: 6.5rem;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .overlayText h2 {
+    font-size: 4rem;
+  }
+  .overlayText p {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .overlayText h2 {
+    font-size: 3.5rem;
+  }
+  .overlayText p {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .overlayText {
+    width: 95%;
+    padding: 15px;
+  }
+  .overlayText h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  .overlayText p {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .overlayText {
+    width: 100%;
+    padding: 10px;
+  }
+  .overlayText h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .overlayText p {
+    font-size: 2.5rem;
+  }
+}
+
+/* Swiper Navigation Styles */
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+}
+
+:global(.swiper-button-next:after),
+:global(.swiper-button-prev:after) {
+  font-size: 20px !important;
+}
+
+:global(.swiper-pagination) {
+  --swiper-theme-color: #cba525 !important;
+}
+
+@media screen and (max-width: 767px) {
+  :global(.swiper-button-next),
+  :global(.swiper-button-prev) {
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  :global(.swiper-button-next:after),
+  :global(.swiper-button-prev:after) {
+    font-size: 16px !important;
+  }
+}

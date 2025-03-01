@@ -1,0 +1,47 @@
+.ourSpecialitiesSection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 42.4rem;
+  height: 100%;
+  background: linear-gradient(180deg,
+      rgba(21, 21, 21, 0.91) 0%,
+      rgba(21, 21, 21, 0.91) 100%),
+    url("../../../assets/images/banner/cooking-things.jpg");
+  font-size: 3rem;
+  color: var(--sugar-milk);
+  background-color: rgba(var(--rgb-matt-black), 0.7);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.specialityFoodImgWrap {
+  width: 100%;
+  --bs-aspect-ratio: 75%;
+}
+
+.ourSpecialitiesGrid {
+  margin-top: var(--space-sm);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+/* resposnive css start */
+@media (max-width: 991px) {
+  .ourSpecialitiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .ourSpecialitiesGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* resposnive css end */

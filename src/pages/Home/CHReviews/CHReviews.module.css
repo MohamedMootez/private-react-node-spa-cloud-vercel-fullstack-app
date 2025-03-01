@@ -1,0 +1,67 @@
+.reviewSection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+   background: linear-gradient(0deg, rgba(var(--rgb-matt-black), 0.5) 0%, rgba(var(--rgb-matt-black), 0.5) 100%), url("../../../assets/images/elwaeedAssets/reviewSectionImg.jpg");
+  font-size: 3rem;
+  color: var(--shadowed-steel);
+  background-color: rgba(var(--rgb-woodprecker-green), 0.4);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-height: 42.4rem;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.reviewsSwiperWrapper {
+
+  width: 100%;
+}
+
+.swiper-wrapper {
+  display: flex !important;
+  justify-content: center  !important;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto !important; /* Adjust width automatically */
+  max-width: 400px; /* Limit max width */
+}
+
+
+
+.reviewSwiper .reviewAvatarCard {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 3rem;
+}
+
+.reviewSwiper .reviewSwiperCard {
+  box-shadow: 0 1px 6px 0 rgba(var(--rgb-woodprecker-green), 0.15);
+  padding: 4rem;
+  height: 100%;
+  transition: var(--transition-smooth);
+  background-color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.reviewSwiper .reviewSwiperCard:hover {
+  background-color: var(--sugar-milk);
+  border-color: var(--lemon-curry);
+}
+
+.reviewSwiper:global.swiper {
+  padding: 0 1rem; 
+}
+
+.reviewSwiper:global.swiper .swiper-slide {
+   height: auto;
+  padding: 20px 0; 
+}
