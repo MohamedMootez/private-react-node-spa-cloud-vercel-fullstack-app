@@ -1,11 +1,20 @@
 /* Default Styling (Mobile/Tablet) */
 .slidecontainer {
+<<<<<<< HEAD
   position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+=======
+ 
+  position: relative;
+  height: 100%; /* Default height for mobile */
+  display: flex;
+  align-items: flex-end;
+  
+>>>>>>> origin/main
   overflow: hidden;
 }
 
@@ -32,44 +41,101 @@
 .slideContent {
   position: relative;
   width: 100%;
+<<<<<<< HEAD
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+=======
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack content vertically */
+
+>>>>>>> origin/main
 }
 
 /* Ensure Images Fit Without Stretching */
 .slideImage {
   width: 100%;
+<<<<<<< HEAD
   height: 100%;
   object-fit: cover;
+=======
+  height:100%;
+  object-fit: cover; /* Maintains aspect ratio */
+
+}
+
+/* Adjust height for larger screens */
+@media screen and (min-width: 1024px) {
+  .slidecontainer {
+    height: 100% /* Shrink height on desktop */
+
+  }
+  .slideImage {
+    width: 100%;
+    height: 100%;
+    object-fit:cover; /* Maintains aspect ratio */
+  
+  }
+  .slideContent {
+  
+}
+  .mySwiper {
+    height: 100% !important;
+  }
+
+  .swiper-wrapper {
+    height: 100%!important;
+  }
+>>>>>>> origin/main
 }
 
 /* Center Text Overlay */
 .overlayText {
   position: absolute;
+<<<<<<< HEAD
   top: 50%;
+=======
+  top: 55%; /* Adjusted for better visibility */
+>>>>>>> origin/main
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   width: 90%;
+<<<<<<< HEAD
   max-width: 800px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
+=======
+>>>>>>> origin/main
 }
 
 /* Elegant Cursive Font for Title */
 .overlayText h2 {
+<<<<<<< HEAD
   font-family: var(--fontSatisfy);
   color: var(--lemon-curry);
   margin-bottom: 20px;
+=======
+  font-family: "Playfair Display", serif;
+  font-family: var(--fontSatisfy);
+  font-size: 5rem; /* Adjusted for better fit */
+  font-weight: 400 !important;
+  
+  color: var(--lemon-curry);
+  margin-bottom: 10px;
+>>>>>>> origin/main
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Large, Bold White Text for Main Title */
 .overlayText p {
   font-family: var(--fontJosefin);
+<<<<<<< HEAD
   text-transform: uppercase;
   color: white;
   line-height: 1.2;
@@ -128,11 +194,30 @@
     font-size: 2rem;
     margin-bottom: 10px;
   }
+=======
+  font-size: 6.5rem;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  color: white;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Make text smaller on smaller screens */
+@media screen and (max-width: 768px) {
+  .overlayText h2 {
+    font-size: 2rem;
+  }
+
+>>>>>>> origin/main
   .overlayText p {
     font-size: 2.5rem;
   }
 }
 
+<<<<<<< HEAD
 /* Swiper Navigation Styles */
 :global(.swiper-button-next),
 :global(.swiper-button-prev) {
@@ -163,4 +248,15 @@
   :global(.swiper-button-prev:after) {
     font-size: 16px !important;
   }
+=======
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev){
+    color: white !important;
+   
+    border-radius: 50% !important;
+}
+:global(.swiper-pagination ) {
+  --swiper-theme-color: #cba525!important;
+>>>>>>> origin/main
 }

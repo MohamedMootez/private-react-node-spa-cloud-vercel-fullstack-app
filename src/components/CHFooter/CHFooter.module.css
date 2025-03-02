@@ -1,10 +1,13 @@
 .footerSection {
   background-color: var(--matt-black);
+<<<<<<< HEAD
   padding: 40px 0 0;
 }
 
 .footerDetailsCard {
   margin-bottom: 30px;
+=======
+>>>>>>> origin/main
 }
 
 .footerDetailsCard span {
@@ -12,6 +15,7 @@
 }
 
 .footerGridWrap {
+<<<<<<< HEAD
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;
@@ -23,10 +27,21 @@
 .footerDetailsCard:not(:last-child) {
   padding-right: 30px;
   border-right: 1px solid rgba(var(--rgb-white), 0.3);
+=======
+  grid-template-columns: repeat(5, 1fr);
+
+}
+
+.footerDetailsCard:not(:last-child) {
+  padding-right: 37px;
+  border-right: 1px solid rgba(var(--rgb-white), 0.3);
+  margin-right: 27px;
+>>>>>>> origin/main
 }
 
 .footerLogoWrap {
   max-width: 130px;
+<<<<<<< HEAD
   margin-bottom: 20px;
 }
 
@@ -34,6 +49,8 @@
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+=======
+>>>>>>> origin/main
 }
 
 .footerSection ul li a {
@@ -42,10 +59,13 @@
   background-color: var(--bleached-silk);
   transition: var(--transition-smooth);
   color: var(--shadowed-steel);
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+=======
+>>>>>>> origin/main
 }
 
 .footerSection li a span {
@@ -64,6 +84,7 @@
 
 .copyrightWrapper {
   border-top: 1px solid var(--shadowed-steel);
+<<<<<<< HEAD
   padding: 20px 0;
   margin-top: 40px;
   text-align: center;
@@ -79,10 +100,52 @@
 
   .footerDetailsCard:not(:last-child) {
     padding-right: 20px;
+=======
+  padding: 17px 0;
+}
+/* resposnive css start */
+@media (max-width: 1599px) {
+  .footerDetailsCard:not(:last-child) {
+    padding-right: 25px;
+    margin-right: 20px;
+  }
+  .footerSection{
+    display: block !important;
+    
+  }
+  .footerGridWrap {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    width:90em !important;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .footerGridWrap {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    
+  }
+
+  .footerDetailsCard:not(:last-child) {
+    border-right: 0;
+  }
+  .footerSection{
+    display: block !important;
+    
+  }
+  .footerGridWrap {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    width:90em !important;
+    margin: 0;
+>>>>>>> origin/main
   }
 }
 
 @media (max-width: 991px) {
+<<<<<<< HEAD
   .footerGridWrap {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -156,6 +219,84 @@ html[dir="rtl"] .timeDayCard .d-flex {
 }
 
 .timeDayCard strong,
+=======
+  .footerSection{
+    display: block !important;
+    
+  }
+  .footerGridWrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footerGridWrap {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    width:80em !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .footerGridWrap {
+    grid-template-columns: repeat(2, 1fr);
+ 
+  
+  }
+  .footerSection{
+    display: block !important;
+ 
+    
+  }
+  .footerGridWrap {
+   
+    width:90em !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerGridWrap {
+    grid-template-columns: repeat(1, 1fr);
+
+
+ 
+
+  }
+  .footerDetailsCard{
+
+  }
+  .footerSection{
+    display: flex !important;
+    justify-content: center !important;
+flex-direction: column-reverse !important;
+
+ 
+    
+  }
+ 
+}
+/* resposnive css end */
+
+.timeDayCard{
+  width:100%;
+}
+
+html[dir="rtl"] .timeDayCard {
+  text-align: right; /* Align text properly */
+direction: rtl;
+}
+
+html[dir="rtl"] .timeDayCard .d-flex {
+  flex-direction: row-reverse; /* Reverse direction for RTL */
+  justify-content: space-between;
+}
+
+
+html[dir="rtl"] .timeDayCard .d-flex {
+  flex-direction: row-reverse; /* Reverse direction for RTL */
+}
+html[dir="rtl"] .footerGridWrap {
+  direction: rtl;
+}
+.timeDayCard strong, 
+>>>>>>> origin/main
 .timeDayCard p {
   white-space: nowrap;
   overflow: hidden;

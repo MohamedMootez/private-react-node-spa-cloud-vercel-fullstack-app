@@ -1,11 +1,15 @@
 .formGroup {
   --form-control-space: 20px;
   margin-bottom: 20px;
+<<<<<<< HEAD
   width: 100%;
+=======
+>>>>>>> origin/main
 }
 
 :global .form-label {
   font-size: 14px;
+<<<<<<< HEAD
   line-height: 1.5;
   text-align: left;
   color: var(--text-shadowed-steel);
@@ -15,13 +19,27 @@
 
 .formGroup :global .form-control {
   border: 1px solid var(--cold-morning);
+=======
+  line-height: 28px;
+  text-align: left;
+  color: var(--text-shadowed-steel);
+}
+
+.formGroup :global .form-control {
+  border-color: var(--cold-morning);
+>>>>>>> origin/main
   width: 100%;
   min-height: 56px;
   border-radius: 3px;
   font-size: 16px;
+<<<<<<< HEAD
   padding: 12px var(--form-control-space);
   transition: var(--transition-smooth);
   background-color: var(--white);
+=======
+  padding: 5px var(--form-control-space);
+  transition: var(--transition-smooth);
+>>>>>>> origin/main
 }
 
 .formGroup :global .form-control:focus,
@@ -29,12 +47,17 @@
 .formGroup :global .form-control:focus-visible,
 .formGroup :global .form-control:focus-within {
   border-color: var(--lemon-curry);
+<<<<<<< HEAD
   box-shadow: 0 0 0 2px rgba(203, 165, 37, 0.2);
+=======
+  box-shadow: none;
+>>>>>>> origin/main
   outline: none;
   background-color: var(--sugar-milk);
 }
 
 .formGroup :global textarea.form-control {
+<<<<<<< HEAD
   padding: 15px var(--form-control-space);
   resize: vertical;
   min-height: 120px;
@@ -90,3 +113,15 @@
   font-size: 13px;
   color: #dc3545;
 }
+=======
+  padding: 20px var(--form-control-space);
+  resize: none;
+}
+/* resposnive css start */
+@media (max-width: 767px) {
+  .formGroup :global .form-control {
+    min-height: 45px;
+  }
+}
+/* resposnive css end */
+>>>>>>> origin/main
