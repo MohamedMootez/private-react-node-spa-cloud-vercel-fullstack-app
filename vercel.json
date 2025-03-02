@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "functions": {
     "api/fetchData.js": {
       "maxDuration": 30
@@ -9,14 +8,3 @@
     }
   }
 }
-=======
-    "functions": {
-        "api/fetchData.js": {
-            "maxDuration":30   
-        },
-        "api/pushToGoogleSheets.js": {
-            "maxDuration":30   
-        }
-}
-}
->>>>>>> origin/main
