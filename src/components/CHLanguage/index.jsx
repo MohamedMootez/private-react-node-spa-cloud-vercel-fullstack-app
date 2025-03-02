@@ -37,7 +37,7 @@
 import "../../i18n.js";
 import { useTranslation } from "react-i18next";
 import "./CHLanguage.css";
-import twemoji from "twemoji";
+import { Flag } from "react-world-flags";
 
 export const CHLanguage = () => {
   const { i18n } = useTranslation();
@@ -49,25 +49,13 @@ export const CHLanguage = () => {
   return (
     <div className="LanguageButton">
       <button className="LanguageButtons" onClick={() => changeLanguage("en")}>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: twemoji.parse("🇬🇧 United Kingdom"),
-          }}
-        />
+        <Flag code="GB" className="w-6 h-6" /> {/* Great Britain */}
       </button>
       <button className="LanguageButtons" onClick={() => changeLanguage("fr")}>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: twemoji.parse("🇫🇷 France"),
-          }}
-        />
+        <Flag code="FR" className="w-6 h-6" /> {/* France */}
       </button>
       <button className="LanguageButtons" onClick={() => changeLanguage("ar")}>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: twemoji.parse("🇹🇳 Tunisia"),
-          }}
-        />
+        <Flag code="TN" className="w-6 h-6" /> {/* Tunisia */}
       </button>
     </div>
   );

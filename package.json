@@ -24,6 +24,7 @@
     "react-i18next": "^15.1.4",
     "react-router-dom": "^6.23.1",
     "react-toastify": "^10.0.6",
+    "react-world-flags": "^1.6.0",
     "swiper": "^11.1.4",
     "twemoji": "^14.0.2",
     "vite-plugin-vercel": "^9.0.3",
