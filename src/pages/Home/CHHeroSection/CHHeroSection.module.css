@@ -1,24 +1,32 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../../../src/assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: Playfair Display;
+}
 .heroSection {
-
   background-color: rgba(21, 21, 21, 0.47);
   background-position: center 90px; /* Center horizontally, 90px from the top */
   background-size: cover;
   background-repeat: no-repeat;
-  
+
   background-attachment: scroll;
 
   position: relative;
 
   height: 90vh; /* Shrink the hero section */
   min-height: 90vh; /* Ensure it doesn’t stretch */
- /* Reduce padding */
+  /* Reduce padding */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   overflow: hidden; /* Prevents unwanted stretching */
 }
-
 
 .logo {
   max-width: 11.4rem;
@@ -28,19 +36,24 @@
   transform: translateX(-50%);
   width: 100%;
 }
-.headline{
+.headline {
   position: absolute;
   z-index: 2;
 
   animation: flicker 2s infinite alternate;
 }
 @keyframes flicker {
-  0% { text-shadow: 0 0 10px rgb(45, 45, 43); }
-  50% { text-shadow: 0 0 20px rgb(45, 45, 43); }
-  100% { text-shadow: 0 0 10px rgb(45, 45, 43); }
+  0% {
+    text-shadow: 0 0 10px rgb(45, 45, 43);
+  }
+  50% {
+    text-shadow: 0 0 20px rgb(45, 45, 43);
+  }
+  100% {
+    text-shadow: 0 0 10px rgb(45, 45, 43);
+  }
 }
 .carouselWrapper {
-
   overflow: hidden;
   position: relative;
 
@@ -49,13 +62,11 @@
 }
 
 .carouselImage {
-  
-
   height: 100%; /* Ensure images fit within the reduced height */
   object-fit: cover;
 }
 
-.carouselFooter{
+.carouselFooter {
   display: flex;
   justify-content: center;
 }

@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../../../src/assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: Playfair Display;
+}
 .ourSpecialitiesSection::after {
   content: "";
   position: absolute;
@@ -6,9 +16,11 @@
   width: 100%;
   max-height: 42.4rem;
   height: 100%;
-  background: linear-gradient(180deg,
+  background: linear-gradient(
+      180deg,
       rgba(21, 21, 21, 0.91) 0%,
-      rgba(21, 21, 21, 0.91) 100%),
+      rgba(21, 21, 21, 0.91) 100%
+    ),
     url("../../../assets/images/banner/cooking-things.jpg");
   font-size: 3rem;
   color: var(--sugar-milk);

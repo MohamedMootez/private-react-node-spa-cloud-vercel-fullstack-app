@@ -29,3 +29,65 @@
   color: #000;
   cursor: pointer;
 }
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 4px; /* Reduced gap between flags */
+  margin: 0;
+  padding: 0;
+}
+
+.language-btn {
+  background: none;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.language-btn:hover {
+  transform: scale(1.1);
+}
+
+.flag-icon {
+  width: 28px;
+  height: 25px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .language-selector {
+    gap: 4px;
+    justify-content: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .language-btn {
+    padding: 1px;
+  }
+
+  .flag-icon {
+    width: 30px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .language-selector {
+    gap: 3px;
+  }
+
+  .flag-icon {
+    width: 25px;
+    height: 25px;
+  }
+}

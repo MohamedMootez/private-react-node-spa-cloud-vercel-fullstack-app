@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../../../src/assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: Playfair Display;
+}
 .CHDiscoverSection {
   background-image: url("../../../assets/images/banner/tan-color-banner.jpg");
   background-color: var(--sugar-milk);
@@ -6,10 +16,8 @@
   background-size: cover;
   padding: 0.4em !important;
 
-text-align: center;
-
+  text-align: center;
 }
-
 
 /* Highlighted Text */
 .highlightText {
@@ -42,6 +50,7 @@ text-align: center;
 }
 
 .storyContent {
+  z-index: 3;
   align-content: center;
   padding: 4.5rem;
 }

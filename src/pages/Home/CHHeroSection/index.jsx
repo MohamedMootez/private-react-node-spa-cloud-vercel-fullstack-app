@@ -13,7 +13,7 @@ import MyCarousel from "../../../components/MyCarousel";
 //           <span className="h1 small font-satisfy text-lemon-curry fw-normal text-center d-block mb-4 pb-1">
 //             {t("El_WaeedCulinatifLabe")}
 //           </span>
-//           <h1 className="text-uppercase fw-bold text-white text-center font-josefin">
+//           <h1 className="text-uppercase fw-bold text-white text-center ">
 //             {t("La_PassionLabel")}
 //           </h1>
 //         </div>
@@ -106,7 +106,7 @@ export const CHHeroSection = () => {
     //     <span className="h1 small font-satisfy text-lemon-curry fw-normal text-center d-block mb-4 pb-1">
     //       {t("El_WaeedCulinatifLabe")}
     //     </span>
-    //     <h1 className="text-uppercase fw-bold text-white text-center font-josefin">
+    //     <h1 className="text-uppercase fw-bold text-white text-center ">
     //       {t("La_PassionLabel")}
     //     </h1>
     //   </div>

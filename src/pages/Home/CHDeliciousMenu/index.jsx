@@ -50,7 +50,7 @@ export const CHDeliciousMenu = () => {
                               <h5
                                 className={clsx(
                                   styles.dishName,
-                                  "text-jet fw-bold font-josefin text-ellipsis line-clamp-3"
+                                  "text-jet fw-bold  text-ellipsis line-clamp-3"
                                 )}
                               >
                                 {t(dish.dishName)}

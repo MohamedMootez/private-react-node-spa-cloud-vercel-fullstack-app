@@ -51,7 +51,7 @@ export const CHDiscover = () => {
               </div>
             </div>
             <div className={styles.storyContent}>
-              <h3 className="fw-bold font-josefin text-capitalize text-jet mb-5">
+              <h3 className="fw-bold  text-capitalize text-jet mb-5">
                 {t("LàléléganceLabel")}
               </h3>
               <p className="text-capitalize text-shadowed-steel lh-16 text-ellipsis line-clamp-5 mb-4">

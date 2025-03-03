@@ -2,3 +2,13 @@
 @import url(./assets/css/variable.css);
 @import url(./assets/css/default.css);
 @import url(./assets/css/responsive.css);
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../../../src/assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: Playfair Display;
+}

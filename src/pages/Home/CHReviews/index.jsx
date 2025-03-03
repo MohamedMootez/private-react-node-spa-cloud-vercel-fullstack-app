@@ -66,11 +66,11 @@
 //                             alt={`swiper-img-${index + 1}`}
 //                           />
 //                         </div>
-//                         <p className="big font-josefin text-ellipsis line-clamp-4">
+//                         <p className="big  text-ellipsis line-clamp-4">
 //                           {t(slider.reviewMessage)}
 //                         </p>
 //                       </div>
-//                       <span className="p sm d-block text-lemon-curry font-josefin mt-auto text-uppercase">
+//                       <span className="p sm d-block text-lemon-curry  mt-auto text-uppercase">
 //                         {slider.name}
 //                       </span>
 //                     </div>
@@ -132,11 +132,11 @@ export const CHReviews = () => {
                     alt={`review-avatar-${index + 1}`}
                   />
                 </div>
-                <p className="big font-josefin text-ellipsis line-clamp-4 mt-3">
+                <p className="big  text-ellipsis line-clamp-4 mt-3">
                   {t(slider.reviewMessage)}
                 </p>
               </div>
-              <span className="p sm d-block text-lemon-curry font-josefin mt-auto text-uppercase">
+              <span className="p sm d-block text-lemon-curry  mt-auto text-uppercase">
                 {slider.name}
               </span>
             </div>

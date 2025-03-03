@@ -1,9 +1,24 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../../../src/assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: Playfair Display;
+}
 .reviewSection::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-   background: linear-gradient(0deg, rgba(var(--rgb-matt-black), 0.5) 0%, rgba(var(--rgb-matt-black), 0.5) 100%), url("../../../assets/images/elwaeedAssets/reviewSectionImg.jpg");
+  background: linear-gradient(
+      0deg,
+      rgba(var(--rgb-matt-black), 0.5) 0%,
+      rgba(var(--rgb-matt-black), 0.5) 100%
+    ),
+    url("../../../assets/images/elwaeedAssets/reviewSectionImg.jpg");
   font-size: 3rem;
   color: var(--shadowed-steel);
   background-color: rgba(var(--rgb-woodprecker-green), 0.4);
@@ -16,15 +31,13 @@
   z-index: -1;
 }
 
-
 .reviewsSwiperWrapper {
-
   width: 100%;
 }
 
 .swiper-wrapper {
   display: flex !important;
-  justify-content: center  !important;
+  justify-content: center !important;
 }
 
 .swiper-slide {
@@ -34,8 +47,6 @@
   width: auto !important; /* Adjust width automatically */
   max-width: 400px; /* Limit max width */
 }
-
-
 
 .reviewSwiper .reviewAvatarCard {
   width: 72px;
@@ -58,10 +69,10 @@
 }
 
 .reviewSwiper:global.swiper {
-  padding: 0 1rem; 
+  padding: 0 1rem;
 }
 
 .reviewSwiper:global.swiper .swiper-slide {
-   height: auto;
-  padding: 20px 0; 
+  height: auto;
+  padding: 20px 0;
 }
