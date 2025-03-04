@@ -6,7 +6,6 @@ import hero from "../assets/images/elwaeedAssets/hero.jpg";
 import hero1 from "../assets/images/elwaeedAssets/hero1.jpg";
 import hero2 from "../assets/images/elwaeedAssets/hero2.jpg";
 import hero3 from "../assets/images/elwaeedAssets/hero3.jpg";
-import hero4 from "../assets/images/elwaeedAssets/hero4.png";
 
 import specialite1 from "../assets/images/elwaeedAssets/specialite1.jpg";
 import specialite2 from "../assets/images/elwaeedAssets/specialite2.jpg";
@@ -53,7 +52,6 @@ export {
   hero1,
   hero2,
   hero3,
-  hero4,
   formationA,
   formationD,
   formationB,

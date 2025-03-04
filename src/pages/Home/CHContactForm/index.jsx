@@ -16,7 +16,7 @@ import CaptchaButton from "../../../components/CaptchaButton";
 
 export const CHContactForm = () => {
   const { t } = useTranslation();
-  const [setIsButtonDisabled] = useState(false);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -43,16 +43,18 @@ export const CHContactForm = () => {
 
   const validateInputs = () => {
     const newErrors = {};
-    if (!formData.name.trim()) newErrors.name = t("Name is required.");
+
+    if (!formData.name.trim()) newErrors.name = t("NameError");
     if (!formData.email.trim()) {
-      newErrors.email = t("Email is required.");
+      newErrors.email = t("EmailError");
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = t("Invalid email format.");
+      newErrors.email = t("InvalidEmailFormat"); // Ensure this key exists in the JSON
     }
-    if (!formData.date.trim()) newErrors.date = t("Date is required.");
-    if (!formData.text.trim()) newErrors.text = t("Text is required.");
-    if (!selectedFile) newErrors.file = t("File is required.");
-    if (!captchaToken) newErrors.captcha = t("Please complete the CAPTCHA.");
+    if (!formData.date.trim()) newErrors.date = t("DateError");
+    if (!formData.text.trim()) newErrors.text = t("TextError");
+    if (!selectedFile) newErrors.file = t("FileError");
+    if (!captchaToken) newErrors.captcha = t("CaptchaError");
+
     return newErrors;
   };
 
@@ -117,11 +119,11 @@ export const CHContactForm = () => {
         setSelectedFile(null);
         setCaptchaToken(null); // Reset CAPTCHA token
       } else {
-        throw new Error(`Unexpected response status: ${response.status}`);
+        throw new Error(`Statut de réponse inattendu : ${response.status}`);
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
-      toast.error(t("An error occurred. Please try again."));
+      console.error(" Erreur lors de l'envoi du formulaire : ", error);
+      toast.error(t("GeneralError"));
     } finally {
       setIsButtonDisabled(false);
     }
@@ -323,8 +325,8 @@ export const CHContactForm = () => {
                             <CHButton
                               CHBtnClassname="text-uppercase m-auto text-jet"
                               type="submit"
-                              disabled={false}
-                              // onClick={handleSubmit} // Reattach the onClick event here
+                              disabled={isButtonDisabled}
+                              onClick={handleSubmit} // Reattach the onClick event here
                             >
                               {t("SInscriLabel")}
                             </CHButton>

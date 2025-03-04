@@ -93,6 +93,16 @@ const resources = {
       AmuseBoucheT: "Amuse-Bouche",
       AmuseBoucheTD:
         "Apprenez à préparer de délicieuses bouchées apéritives, parfaites pour impressionner vos invités.",
+
+      NameError: "Le nom est requis.",
+      DateError: "La date est requise.",
+      EmailError: "L'e-mail est requis.",
+      InvalidEmailFormat: "Format d'e-mail invalide.",
+      FileError: "Le fichier est requis.",
+      TextError: "Le texte est requis.",
+      CaptchaError: "Veuillez compléter le CAPTCHA.",
+      GeneralError: "Une erreur s'est produite. Veuillez réessayer.",
+      FileUploadSuccess: "Fichier téléchargé et données ajoutées avec succès!",
     },
   },
   en: {
@@ -180,6 +190,15 @@ const resources = {
       AmuseBoucheT: "Amuse-Bouche",
       AmuseBoucheTD:
         "Learn to prepare delicious bite-sized appetizers, perfect for impressing your guests.",
+      NameError: "Name is required.",
+      DateError: "Date is required.",
+      EmailError: "Email is required.",
+      InvalidEmailFormat: "Invalid email format.",
+      FileError: "File is required.",
+      TextError: "Text is required.",
+      CaptchaError: "Please complete the CAPTCHA.",
+      GeneralError: "An error occurred. Please try again.",
+      FileUploadSuccess: "File uploaded and data appended successfully!",
     },
   },
 
@@ -265,6 +284,15 @@ const resources = {
         "قدم للأطفال تجربة ممتعة في المطبخ بوصفات سهلة وبسيطة تناسب أعمارهم.",
       AmuseBoucheT: "المقبلات الفاخرة",
       AmuseBoucheTD: "تعلم تحضير مقبلات شهية صغيرة الحجم، مثالية لإبهار ضيوفك.",
+      NameError: "الاسم مطلوب.",
+      DateError: "التاريخ مطلوب.",
+      EmailError: "البريد الإلكتروني مطلوب.",
+      InvalidEmailFormat: "تنسيق البريد الإلكتروني غير صالح.",
+      FileError: "الملف مطلوب.",
+      TextError: "النص مطلوب.",
+      CaptchaError: "يرجى إكمال اختبار CAPTCHA.",
+      GeneralError: "حدث خطأ. يرجى المحاولة مرة أخرى.",
+      FileUploadSuccess: "تم تحميل الملف وإضافة البيانات بنجاح!",
     },
   },
 };

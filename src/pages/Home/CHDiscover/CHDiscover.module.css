@@ -51,7 +51,7 @@
 
 .storyContent {
   z-index: 3;
-  align-content: center;
+  padding-top: 0px;
   padding: 4.5rem;
 }
 
