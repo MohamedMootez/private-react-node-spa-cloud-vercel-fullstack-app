@@ -53,9 +53,9 @@ const resources = {
       CuisineE: "Cuisine Européenne",
       CuisineED:
         "Explorez la richesse de la cuisine européenne, des classiques français aux spécialités italiennes et espagnoles.",
-      PatT: "Pâtisserie Orientale",
+      PatT: "Pâtisserie Tunisienne",
       PatTD:
-        "Apprenez l'art délicat de la pâtisserie orientale, des douceurs sucrées aux recettes traditionnelles.",
+        "Apprenez l'art de la pâtisserie tunisienne, où saveurs riches et textures délicates se rencontrent dans des douceurs traditionnelles comme le Makroud et le Kaak Warka. Maîtrisez des techniques authentiques et régalez-vous à chaque bouchée !",
       PatE: "Pâtisserie Européenne",
       PatED:
         "Maîtrisez les techniques de la pâtisserie européenne, des viennoiseries françaises aux desserts raffinés.",
@@ -65,7 +65,8 @@ const resources = {
       CuisineOD:
         "Maîtrisez l'art de la cuisine orientale en explorant les saveurs riches et les techniques de cuisson traditionnelles du Moyen-Orient et de l'Afrique du Nord.",
       Pat: "Pâtisserie Oriental",
-      PatD: "Apprenez l'art délicat de la pâtisserie, des classiques français aux créations modernes.",
+      PatD: "Découvrez les saveurs riches de la pâtisserie orientale, où le miel, les fruits secs et les épices délicates créent des délices irrésistibles comme le Baklava et le Katayef. Maîtrisez des techniques authentiques et apportez le goût de la tradition à votre cuisine !",
+
       vien: "Viennoiserie",
       vienD:
         "Maîtrisez les techniques de la viennoiserie, du croissant au pain au chocolat, avec un accent sur la pâte feuilletée et la fermentation.",
@@ -113,9 +114,9 @@ const resources = {
       CuisineE: "European Cuisine",
       CuisineED:
         "Explore the richness of European cuisine, from French classics to Italian and Spanish specialties.",
-      PatT: "Oriental Pastry",
+      PatT: "Tunisian Pastry",
       PatTD:
-        "Learn the delicate art of oriental pastry, from sweet delights to traditional recipes.",
+        "Learn the art of Tunisian pastry, where rich flavors and delicate textures come together in traditional treats like Makroud and Kaak Warka. Master authentic techniques and impress with every bite!",
       PatE: "European Pastry",
       PatED:
         "Master the techniques of European pastry, from French viennoiseries to refined desserts.",
@@ -136,7 +137,7 @@ const resources = {
       DevloperLabel:
         "develop the entrepreneurial spirit and strengthen the employability of young people for a promising future.",
       endroitLabel: "The perfect place to learn",
-      SpecLabçel: "Our Specialties",
+      SpecLabel: "Our Specialties",
       ExpLabel: "Experience",
       EveLabel: " Sneak a Peek",
       TeamLabel: "Our Team",
@@ -163,8 +164,8 @@ const resources = {
 
       CuisineOD:
         "Master the art of Oriental cuisine, exploring rich flavors and traditional cooking techniques from the Middle East and North Africa.",
-      Pat: "Pastery",
-      PatD: "Learn the delicate art of pastry making, from classic French pastries to modern dessert creations.",
+      Pat: "Oriental Pastery",
+      PatD: "Discover the rich flavors of Oriental pastry, where honey, nuts, and delicate spices create irresistible treats like **Baklava** and **Katayef**. Master authentic techniques and bring the taste of tradition to your kitchen!",
       vien: "Viennoiserie",
       vienD:
         "Master the techniques of viennoiserie, from croissants to pain au chocolat, with a focus on laminated dough and fermentation.",
@@ -210,9 +211,9 @@ const resources = {
       CuisineE: "المطبخ الأوروبي",
       CuisineED:
         "استكشف روائع المطبخ الأوروبي، من الكلاسيكيات الفرنسية إلى التخصصات الإيطالية والإسبانية.",
-      PatT: "الحلويات الشرقية",
+      PatT: "الحلويات التونسية ",
       PatTD:
-        "تعلم فن الحلويات الشرقية، من الأطباق الحلوة إلى الوصفات التقليدية.",
+        "تعلم فن المعجنات التونسية، حيث تلتقي النكهات الغنية والقوام الرقيق في حلويات تقليدية مثل المقروض وكعك الورقة. أتقن التقنيات الأصيلة وأبهر الجميع مع كل لقمة!",
       PatE: "الحلويات الأوروبية",
       PatED:
         "أتقن تقنيات الحلويات الأوروبية، من الفطائر الفرنسية إلى الحلويات الراقية.",
@@ -258,8 +259,9 @@ const resources = {
       CuisineO: "المطبخ الشرقي",
       CuisineOD:
         "أتقن فن الطبخ الشرقي من خلال استكشاف النكهات الغنية وتقنيات الطهي التقليدية من الشرق الأوسط وشمال إفريقيا",
-      Pat: "المعجنات",
-      PatD: "تعلم فن صناعة المعجنات من الحلويات الفرنسية الكلاسيكية إلى الإبداعات الحديثة",
+      Pat: "معجنات شرقية",
+      PatD: `
+اكتشف نكهات المعجنات الشرقية الغنية، حيث يجتمع العسل والمكسرات والتوابل الرقيقة لصنع حلويات لا تقاوم مثل البقلاوة والقطايف. أتقن التقنيات الأصلية وأضف لمسة من التراث إلى مطبخك!`,
       vien: "المعجنات",
       vienD:
         "أتقن تقنيات الفينو، من الكرواسون إلى خبز الشوكولاتة، مع التركيز على العجينة المخمرة والطبقات المتعددة",
