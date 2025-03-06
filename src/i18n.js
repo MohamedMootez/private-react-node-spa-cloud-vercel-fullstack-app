@@ -5,7 +5,7 @@ const resources = {
   fr: {
     translation: {
       aceuilleLabel: "Aceuille",
-      "Sûr-ceLabel": "Sûr-ce",
+      surceLabel: "Sûr-ce",
       El_WaeedCulinatifLabe: "EL WAEED, PLATFORME CULINAIRE.",
       La_PassionLabel: "La Passion du Gout",
       Au_cœurLabel: "Au cœur de notre monde",
@@ -122,7 +122,7 @@ const resources = {
         "Master the techniques of European pastry, from French viennoiseries to refined desserts.",
 
       aceuilleLabel: "Home",
-      "Sûr-ceLabel": "About",
+      surceLabel: "About",
       El_WaeedCulinatifLabe: "EL WAEED CULINARY PLATFORM",
       La_PassionLabel: "The Passion for Taste",
       Au_cœurLabel: "At the Heart of Our Universe",
@@ -219,7 +219,7 @@ const resources = {
         "أتقن تقنيات الحلويات الأوروبية، من الفطائر الفرنسية إلى الحلويات الراقية.",
 
       aceuilleLabel: "الرئيسية",
-      "Sûr-ceLabel": "عن",
+      surceLabel: "عن",
       El_WaeedCulinatifLabe: "منصة الوعد للطهي",
       La_PassionLabel: "شغف الذوق",
       Au_cœurLabel: "في قلب عالمنا",
@@ -274,12 +274,12 @@ const resources = {
       chouD:
         "استكشف فن صناعة الشوكولاتة، بدءًا من عملية تحويل حبوب الكاكاو إلى لوح شوكولاتة، وتقنيات التلميع، وصناعة الحلويات الفاخرة",
       adresse: "شارع الاستقلال دندن، تونس، تونس",
-      dayA: "الإثنين - الجمعة:8 صباحًا8 - 11 مساءً",
+      dayA: "الإثنين - الجمعة : صباحًا 8 - 11 مساءً",
       timeA: " ",
-      dayB: "السبت: صباحًا10 - 6 مساءً",
-      timeB: " 10 ",
-      dayC: "الأحد: 10 صباحًا10 - 4 مساءً",
-      timeC: "",
+      dayB: `السبت : صباحًا 10 - 6 مساءً       \t  `,
+      timeB: " ",
+      dayC: "الأحد :  صباحًا 10 - 4 مساءً        ",
+      timeC: " ",
       Contact: "اتصال",
       KidCookingT: "الطبخ للأطفال",
       KidCookingTD:

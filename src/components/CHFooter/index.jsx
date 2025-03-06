@@ -6,11 +6,12 @@ import styles from "./CHFooter.module.css";
 import { useTranslation } from "react-i18next";
 const socialLinks = [
   {
-    socialLink: "https://facebook.com/yourpage",
+    socialLink: "https://www.facebook.com/profile.php?id=100063640526937  ",
     socialIconName: <i className="bi bi-facebook"></i>,
   },
   {
-    socialLink: "https://instagram.com/yourpage",
+    socialLink:
+      "https://www.instagram.com/explore/locations/1002010329940601/centre-de-formation-elwaeed/",
     socialIconName: <i className="bi bi-instagram"></i>,
   },
   {
