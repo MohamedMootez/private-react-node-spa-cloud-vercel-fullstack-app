@@ -206,7 +206,7 @@ import EuropeanCookingL from "../assets/images/EuropeanCooking/l.jpg";
 // Numbered images
 import EuropeanPastery1 from "../assets/images/EuropeanPastery/1.jpg";
 import EuropeanPastery2 from "../assets/images/EuropeanPastery/2.jpg";
-import EuropeanPastery3 from "../assets/images/EuropeanPastery/3.jpg";
+
 import EuropeanPastery4 from "../assets/images/EuropeanPastery/4.jpg";
 import EuropeanPastery5 from "../assets/images/EuropeanPastery/5.jpg";
 
@@ -646,7 +646,6 @@ export {
   EuropeanCookingL,
   EuropeanPastery1,
   EuropeanPastery2,
-  EuropeanPastery3,
   EuropeanPastery4,
   EuropeanPastery5,
   EuropeanPastery7,

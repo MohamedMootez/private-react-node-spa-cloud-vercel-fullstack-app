@@ -302,7 +302,6 @@ import {
   EuropeanCookingL,
   EuropeanPastery1,
   EuropeanPastery2,
-  EuropeanPastery3,
   EuropeanPastery4,
   EuropeanPastery5,
   EuropeanPastery7,
@@ -629,7 +628,6 @@ export const menuDishesData = [
     images: [
       EuropeanPastery1,
       EuropeanPastery2,
-      EuropeanPastery3,
       EuropeanPastery4,
       EuropeanPastery5,
       EuropeanPastery7,

@@ -15,15 +15,25 @@
 
 .footerDetailsCard {
   margin-bottom: 30px;
+  text-align: center;
+  margin: auto;
 }
 
 .footerDetailsCard span {
   margin-bottom: 12px;
 }
 
-.footerGridWrap {
+/*.footerGridWrap {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}*/
+.footerGridWrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   max-width: 1400px;
   margin: 0 auto;
@@ -40,10 +50,17 @@
   margin-bottom: 20px;
 }
 
+/*.footerSection ul {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}*/
 .footerSection ul {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
 }
 
 .footerSection ul li a {
@@ -153,6 +170,15 @@ html[dir="rtl"] .footerDetailsCard:not(:last-child) {
 
 .timeDayCard {
   width: 100%;
+  margin-bottom: 8px;
+}
+
+.timeDayCard .d-flex {
+  display: inline-flex !important;
+}
+
+.timeDayCard p {
+  margin-bottom: 0;
 }
 
 html[dir="rtl"] .timeDayCard {
@@ -171,3 +197,15 @@ html[dir="rtl"] .timeDayCard .d-flex {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/*html[dir="rtl"] .timeDayCard .d-flex {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.timeDayCard strong,
+.timeDayCard p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}*/

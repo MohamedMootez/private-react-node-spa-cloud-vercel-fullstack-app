@@ -1,9 +1,23 @@
 import { Container } from "react-bootstrap";
 
 import clsx from "clsx";
-import { restaurantTimeMap, socialLinksMap } from "../../constant/data";
+import { restaurantTimeMap } from "../../constant/data";
 import styles from "./CHFooter.module.css";
 import { useTranslation } from "react-i18next";
+const socialLinks = [
+  {
+    socialLink: "https://facebook.com/yourpage",
+    socialIconName: <i className="bi bi-facebook"></i>,
+  },
+  {
+    socialLink: "https://instagram.com/yourpage",
+    socialIconName: <i className="bi bi-instagram"></i>,
+  },
+  {
+    socialLink: "https://youtube.com/yourchannel",
+    socialIconName: <i className="bi bi-youtube"></i>,
+  },
+];
 
 export const CHFooter = () => {
   const { t } = useTranslation();
@@ -30,15 +44,15 @@ export const CHFooter = () => {
             {restaurantTimeMap.map((restaurantItem, restaurantIndex) => {
               return (
                 <div
-                  className="timeDayCard d-flex gap-3 align-items-center justify-content-between"
+                  className="timeDayCard d-flex gap-3 align-items-center justify-content-center"
                   key={restaurantIndex}
                 >
                   <div className="d-flex gap-3">
                     <strong className="ch-text-white">
                       {t(restaurantItem.restaurantWeek)}
                     </strong>
-                    <p className="fw-normal ch-text-white line-height-normal">
-                      {/* {t(restaurantItem.restaurantTime)} */}
+                    <p className="fw-normal ch-text-white line-height-normal mb-0">
+                      {t(restaurantItem.restaurantTime)}
                     </p>
                   </div>
                 </div>
@@ -67,12 +81,13 @@ export const CHFooter = () => {
               {t("ConnectLabel")}
             </span>
             <ul className="d-flex align-items-center gap-4">
-              {socialLinksMap.map((socialIconItem, socialIndex) => {
+              {socialLinks.map((socialIconItem, socialIndex) => {
                 return (
                   <li key={socialIndex}>
                     <a
                       href={socialIconItem.socialLink}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="d-flex align-items-center justify-content-center rounded-circle"
                     >
                       <span className="d-flex justify-content-center align-items-center mb-0">
