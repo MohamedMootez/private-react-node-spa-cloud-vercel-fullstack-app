@@ -58,7 +58,7 @@ import cuisineTunisiene11 from "../assets/images/CuisineTunisien/k.jpg";
 import cuisineTunisiene12 from "../assets/images/CuisineTunisien/l.jpg";
 import cuisineTunisiene13 from "../assets/images/CuisineTunisien/m.jpg";
 
-import AmuseBouche from "../assets/images/AmuseBouche/a.jpg";
+// import AmuseBouche from "../assets/images/AmuseBouche/a.jpg";
 import AmuseBouche0 from "../assets/images/AmuseBouche/b.jpg";
 import AmuseBouche1 from "../assets/images/AmuseBouche/c.jpg";
 import AmuseBouche2 from "../assets/images/AmuseBouche/d.jpg";
@@ -88,8 +88,8 @@ import Baking3 from "../assets/images/Baking/3.jpg";
 import Baking4 from "../assets/images/Baking/4.jpg";
 
 import Baking6 from "../assets/images/Baking/6.jpg";
-import Baking7 from "../assets/images/Baking/7.jpg";
-import Baking8 from "../assets/images/Baking/8.jpg";
+// import Baking7 from "../assets/images/Baking/7.jpg";
+// import Baking8 from "../assets/images/Baking/8.jpg";
 import Baking9 from "../assets/images/Baking/9.jpg";
 import Baking10 from "../assets/images/Baking/10.jpg";
 import Baking11 from "../assets/images/Baking/11.jpg";
@@ -165,13 +165,13 @@ import CuisineOrientalE from "../assets/images/CuisineOriental/e.jpg";
 import CuisineOrientalF from "../assets/images/CuisineOriental/f.jpg";
 import CuisineOrientalG from "../assets/images/CuisineOriental/g.jpg";
 import CuisineOrientalH from "../assets/images/CuisineOriental/h.jpg";
-import CuisineOrientalI from "../assets/images/CuisineOriental/i.jpg";
+// import CuisineOrientalI from "../assets/images/CuisineOriental/i.jpg";
 import CuisineOrientalJ from "../assets/images/CuisineOriental/j.jpg";
 import CuisineOrientalK from "../assets/images/CuisineOriental/k.jpg";
 import CuisineOrientalL from "../assets/images/CuisineOriental/l.jpg";
 import CuisineOrientalM from "../assets/images/CuisineOriental/m.jpg";
-import CuisineOrientalN from "../assets/images/CuisineOriental/n.jpg";
-import CuisineOrientalO from "../assets/images/CuisineOriental/o.jpg";
+// import CuisineOrientalN from "../assets/images/CuisineOriental/n.jpg";
+// import CuisineOrientalO from "../assets/images/CuisineOriental/o.jpg";
 import CuisineOrientalP from "../assets/images/CuisineOriental/p.jpg";
 import CuisineOrientalQ from "../assets/images/CuisineOriental/q.jpg";
 import CuisineOrientalR from "../assets/images/CuisineOriental/r.jpg";
@@ -185,10 +185,12 @@ import CuisineTunisienF from "../assets/images/CuisineTunisien/f.jpg";
 import CuisineTunisienG from "../assets/images/CuisineTunisien/g.jpg";
 import CuisineTunisienH from "../assets/images/CuisineTunisien/h.jpg";
 import CuisineTunisienI from "../assets/images/CuisineTunisien/i.jpg";
-import CuisineTunisienJ from "../assets/images/CuisineTunisien/j.jpg";
+// import CuisineTunisienJ from "../assets/images/CuisineTunisien/j.jpg";
 import CuisineTunisienK from "../assets/images/CuisineTunisien/k.jpg";
 import CuisineTunisienL from "../assets/images/CuisineTunisien/l.jpg";
 import CuisineTunisienM from "../assets/images/CuisineTunisien/m.jpg";
+import CuisineTunisienQ from "../assets/images/CuisineTunisien/q.jpg";
+import CuisineTunisienO from "../assets/images/CuisineTunisien/o.jpg";
 
 import EuropeanCookingA from "../assets/images/EuropeanCooking/a.jpg";
 import EuropeanCookingB from "../assets/images/EuropeanCooking/b.jpg";
@@ -354,14 +356,14 @@ import PatisserieTunisien_f from "../assets/images/PatisserieTunisien/f.png";
 import PatisserieTunisien_g from "../assets/images/PatisserieTunisien/g.jpg";
 import PatisserieTunisien_h from "../assets/images/PatisserieTunisien/h.png";
 import PatisserieTunisien_i from "../assets/images/PatisserieTunisien/i.png";
-import PatisserieTunisien_j from "../assets/images/PatisserieTunisien/j.jpg";
+// import PatisserieTunisien_j from "../assets/images/PatisserieTunisien/j.jpg";
 import PatisserieTunisien_k from "../assets/images/PatisserieTunisien/k.png";
 import PatisserieTunisien_l from "../assets/images/PatisserieTunisien/l.jpg";
 import PatisserieTunisien_m from "../assets/images/PatisserieTunisien/m.jpg";
-import PatisserieTunisien_n from "../assets/images/PatisserieTunisien/n.jpg";
-import PatisserieTunisien_o from "../assets/images/PatisserieTunisien/o.jpg";
-import PatisserieTunisien_p from "../assets/images/PatisserieTunisien/p.jpg";
-import PatisserieTunisien_q from "../assets/images/PatisserieTunisien/q.jpg";
+// import PatisserieTunisien_n from "../assets/images/PatisserieTunisien/n.jpg";
+// import PatisserieTunisien_o from "../assets/images/PatisserieTunisien/o.jpg";
+// import PatisserieTunisien_p from "../assets/images/PatisserieTunisien/p.jpg";
+// import PatisserieTunisien_q from "../assets/images/PatisserieTunisien/q.jpg";
 import PatisserieTunisien_r from "../assets/images/PatisserieTunisien/r.jpg";
 import PatisserieTunisien_s from "../assets/images/PatisserieTunisien/s.jpg";
 import PatisserieTunisien_t from "../assets/images/PatisserieTunisien/t.jpg";
@@ -523,7 +525,7 @@ export {
   avatar3,
 
   // Newly Added Variables
-  AmuseBouche,
+  // AmuseBouche,
   AmuseBouche0,
   AmuseBouche1,
   AmuseBouche2,
@@ -551,8 +553,8 @@ export {
   Baking3,
   Baking4,
   Baking6,
-  Baking7,
-  Baking8,
+  // Baking7,
+  // Baking8,
   Baking9,
   Baking10,
   Baking11,
@@ -623,13 +625,13 @@ export {
   CuisineOrientalF,
   CuisineOrientalG,
   CuisineOrientalH,
-  CuisineOrientalI,
+  // CuisineOrientalI,
   CuisineOrientalJ,
   CuisineOrientalK,
   CuisineOrientalL,
   CuisineOrientalM,
-  CuisineOrientalN,
-  CuisineOrientalO,
+  // CuisineOrientalN,
+  // CuisineOrientalO,
   CuisineOrientalP,
   CuisineOrientalQ,
   CuisineOrientalR,
@@ -805,10 +807,11 @@ export {
   CuisineTunisienG,
   CuisineTunisienH,
   CuisineTunisienI,
-  CuisineTunisienJ,
   CuisineTunisienK,
   CuisineTunisienL,
   CuisineTunisienM,
+  CuisineTunisienQ,
+  CuisineTunisienO,
 
   // Add missing exports for PatisserieOriental
   PatisserieOriental1,
@@ -833,14 +836,10 @@ export {
   PatisserieTunisien_g,
   PatisserieTunisien_h,
   PatisserieTunisien_i,
-  PatisserieTunisien_j,
+  // PatisserieTunisien_j,
   PatisserieTunisien_k,
   PatisserieTunisien_l,
   PatisserieTunisien_m,
-  PatisserieTunisien_n,
-  PatisserieTunisien_o,
-  PatisserieTunisien_p,
-  PatisserieTunisien_q,
   PatisserieTunisien_r,
   PatisserieTunisien_s,
   PatisserieTunisien_t,
