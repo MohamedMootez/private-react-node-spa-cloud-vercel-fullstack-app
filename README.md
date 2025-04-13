@@ -1,8 +1,27 @@
-# React + Vite
+# 🍳 Culinary School SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fullstack single-page application (SPA) built with **React**, **Node.js**, and **Express** for a culinary school. Users can fill out a form that submits data to a **Google Sheet** stored in **Google Drive**. The app is deployed on **Vercel**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+
+- 📝 Submit form data (e.g., student or enrollment info)
+- 📤 Data is saved directly to a Google Sheet via Express backend
+- 🌐 Hosted on Vercel with client/server routing handled smoothly
+- 📄 Google Sheets integration through Google APIs
+- ⚛️ React frontend with clean, responsive UI
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** React
+- **Backend:** Node.js + Express
+- **Database:** Google Sheets (via Sheets API)
+- **Hosting:** Vercel (for both frontend and API functions)
+- **Other:** Google Drive, Google Sheets API
+
+---
+
+## 📂 Folder Structure
