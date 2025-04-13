@@ -24,4 +24,3 @@ A fullstack single-page application (SPA) built with **React**, **Node.js**, and
 
 ---
 
-## 📂 Folder Structure
